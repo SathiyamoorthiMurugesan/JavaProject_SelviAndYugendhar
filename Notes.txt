@@ -1,0 +1,362 @@
+Day 1 (18/07/2024)
+* Eclipse basic
+	* disadvantages of accessing and running a file using cmd promt
+	* Eclipse is a 
+		* Editor tool
+		* it gives us a simple but advanced UI to view, edit and run our files in a very easy way.
+		
+*************************************************************************
+Day 1 (19/07/2024)
+
+Taluk office - class
+rooms - methods/functions
+
+Reception related things(table, phone, receptionist, computer) - static - belongs to the class
+
+Paper, pen, water can, water bottle, table, chairs, chalan - anyone can access - public
+Receptionist mobile, person's mobile/money/bike - private
+Documents - protected
+People - default
+
+Access Modifier - public, private, protected and default
+
+Variables
+    10 people/chair/table or 20 people/chair/table or 5 people/chair/table
+	- (10, 20 and 5)- variable values
+	- people/chair/table - type- datatype
+	- red table, red chairs or white chairs - naming - variable name
+
+chair red = 30;
+	Chair - datatype
+	red - variable name 
+	30 - variable value 
+public chair red = 20;
+private chair red = 2; 
+
+VARIABLE COMMON SYNTAX 
+	accessModifer datatype variableName = variableValue;
+
+
+Method - room
+	* Whatever happens inside is not visible to outside or other methods/rooms
+	* We can bring things from reception/hall to a method
+	* But we can not bring a thing from method/room to outside. In order to do that, we need to follow a process
+		- RETURN TYPE
+	* Most of the time method wont give us anything - VOID
+
+METHOD COMMON SYNTAX 
+	- AccessModifer returnType methodName() { }
+	- public void incomeTaxCertificateProcess() {
+		
+		}
+
+Taluk office - Class
+	- It does a set of works
+	- Methods are written inside a class
+
+CLASS COMMON SYNTAX 
+	- AccessModifier class(keyword) ClassName { }
+	- public class TalukOffice {
+
+		}
+	
+public class TalukOffice {
+                                     
+public chair red = 20;
+private chair red = 2;      
+
+	- public void incomeTaxCertificateProcess() {
+		
+		}
+	- public void MarriageCertificateProcess() {
+		
+		}
+
+public chair red = 20;
+private chair red = 2; 
+
+	- private void staffRoom() {
+
+		}
+	- protected void importantDocumentsRoom() {
+
+		}
+
+public chair red = 20;
+private chair red = 2; 
+	
+}
+
+* incomeTaxCertificateProcess - camelCase
+	- class names should start with CAPITAL LETTER and followed by camelCase
+	- method names should start with SMALL LETTER and followed by camelCase
+	- all the java keywords starts with SMALL LETTER such as class, public, void etc.
+
+
+People administration - package
+Chennai Taluk office - Class - parent class
+	below are sub classes of Chennai Taluk office 
+	- Velachery Taluk office - Class 
+		- Velachery east Taluk office - Class (He is sub class of Velachery class)
+	- Tambaram Taluk office - Class
+	- Guindy Taluk office - Class 
+
+Chennai Taluk Office - Parent class
+Velachery Taluk Office - Parent class
+Velachery East Taluk Office - Child class 
+
+VelacheryTalukOffice extends ChennaiTalukOffice { }
+VelacheryEastTalukOffice extends VelacheryTalukOffice { }
+
+We need someone or some office to create rules so that by using that every taluk office will work
+For that, in Java, we use interface 
+
+We create rules in interface
+COMMON SYNTAX FOR INTERFACE 
+	- AccessModifier interface(Java keyword) InterfaceName { }
+	- public interface PeopleAdministrationRules {
+	
+	}
+
+**************************************************************
+Day 3 (20/07/2024)
+
+
+public interface PeopleAdministrationRules {
+	
+	public void incomeCertificateProcess();
+
+	public void marriageCertificateProcess();
+	}
+
+public interface ChennaiEastPeopleAdminRules { 
+	}
+
+
+public interface ChennaiNorthPeopleAdminRules extends PeopleAdministrationRules { 
+	}
+
+public class ChennaiTalukOffice implements PeopleAdministrationRules {
+
+}
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+ChennaiGovtHospital conducts medical camp inside the campus - This event equal to Object Creation or Object Initiation or Object Instantiation in Java
+
+ChennaiGovtHospital MedicalCamp = new ChennaiGovtHospital
+ChennaiGovtHospital BloodDonationCamp = new ChennaiGovtHospital
+ChennaiGovtHospital EyeTestCamp = new ChennaiGovtHospital
+
+public class ChennaiGovtHospital {
+	ChennaiGovtHospital MedicalCamp = new ChennaiGovtHospital();
+}
+
+public class ChennaiPoliceStation { 
+	ChennaiGovtHospital MedicalCamp = new ChennaiGovtHospital();
+}
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Medical camp conducted by ChennaiGovtHospital is managed by a Clerk
+
+This Clerk is equal to "CONSTRUCTOR" in java
+	ChennaiGovtHospital MedicalCamp = new ChennaiGovtHospital();
+		- ChennaiGovtHospital - Constuctor
+
+CONSTRUCTOR COMMON SYNTAX 
+	- AccessModifier ClassName() { }
+	- public ChennaiGovtHospital() { 
+		}
+
+1) Constructor do not have return type;
+2) Constructor name should be as same as Class Name;
+3) By default, each class has its own Constructor and we call it as DEFAULT CONSTRUCTOR;
+
+
+Methods
+static
+Class
+Access Modifier
+Variables 
+Package
+Project
+Interface
+Object Creation
+Constructor
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+Project Structure 
+
+Project
+    sourceFolder
+	- package1
+		InterfaceA
+		InterfaceB
+		ClassA (Datatype/variables/methods)
+			ClassAA 
+			ClassAB
+		ClassB
+		ClassC
+	- package2
+		ClassA
+		ClassB
+		InterfaceC
+	- package3
+		ClassX
+		ClassA
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+* Class - It does a set of work. It consist of variables and methods. Each work would be done by methods. 
+
+* Methods - It does specific job. It always written inside a class
+
+* Variable - it can have type(Data type) and posses a number or name;
+			variables can have different access - access Modifier
+			
+* Access Modifier - defines where we can use a variable/method/class
+
+* Interface - It contains rules most of the time. Sometimes it does some work too(means method).
+			Interface is always followed by class/classes. 
+			When class follows interface, class should do the rule written in the interfacebject
+
+* package - contains class/classes/interface/interfaces/file/files/folder/folders
+
+* Project - consist of package/packages/file/files/folder/folders/source(src)folder
+
+* static - static means belongs to the class. If govt hospital is class, then hospital receptionist is a static member of that class. 
+We can not seperate them variables and methods can be static
+			within a class - static can be used anywhere directly (in a static method or in non-static method)
+			Outside class - static can be used but alone with class name. (in a static method or in non-static method)
+
+* Object (instantiation or initiation)  - E.g: Medical camp; 
+			We create Object only for classes; Whenever we create object we copy whatever the class contains(except static)
+			means, only non-static is copied
+			Through object we can not call static things.
+
+* Constructor - Object creation happens with the help of constructor
+				constructor is available in different kind
+				1. without any money/permission
+				2. only with money
+				3. only with permission
+				4. with both money and permission
+
+
+*************************************************************
+
+Day 4 (21/07/2024)
+
+Git basics
+
+* helps to work on a same file by multiple person. 
+* SCM - Source code management 
+
+Original project is in our system, we use Eclipse to view and edit the project in easy manner
+
+Git Repository - Repo- Remote - Remote project
+
+1) Create a Java project 
+2) Add some packages and classes and some files 
+3) In github.com, create a repository
+4) In File explorer, go to your Java project 
+5) From there open git bash andd type below commands
+	* git init -- it will create a local git with master branch
+	* git add .
+	* git commit -m "some messages"
+	* git remote add origin "repository's SSH path" - we are introducing online repository to local git 
+	* git push origin master
+	* git status
+	
+	* git config --global user.email "";
+	
+	
+**********************************************************
+Day 5 (22/07/2024)
+
+Maven - Dependencies management tool
+
+	* Difficulties in adding a .jar file into our project
+	* .M2 folder stores the dependencies added in pom.xml file
+	* Maven projects gives us a proper project structure
+	
+resolution:-
+	* Instead of Java project, create a maven project
+	* All maven project consist pom.xml file
+	* In pom.xml file, we add the required dependencies
+		* groupId
+		* artifactId
+		* version
+		* scope (optional)
+	* Eg:-
+		OnePlus - GroupID 
+		Mobile - ArtifactID
+		OnePlus11R - Version
+	* Eg:-
+		GroupID - selenium.org
+		ArtifactID - selenium-java
+		version - 4.20.1
+		
+* Home work
+	* Create Maven project
+	* push to git repo using git bash
+	* delete project from your system
+	* By using eclipse import the project directly from git(without RSA)
+	* Add RSA and then import directly from git
+	* Download the project from 
+		* https://github.com/SathiyamoorthiMurugesan/ABC
+		* Import this project into eclipse
+		
+************************************************************************************
+
+Day 6 (23/07/2024)
+		
+Different ways to import a maven project into Eclipse 
+	* clone the project using git bash and import the existing project into Eclipse 
+	* clone the project using eclipse and followed by import the existing project into Eclipse
+	* clone the project in git perspective and import the existing project into Eclipse
+	* download the project into your local and import the existing project into Eclipse
+	
+* What is .gitignore file and how it works 
+
+* How to access build path of a project
+
+* How and why to update the maven project
+
+* Run as 
+	* Maven clean
+	* Maven install
+	
+* In src/main/java
+	* We keep development related files
+* In src/main/resources
+	* We keep utility files which is being used in development files
+* In src/test/java
+	* We keep test case files
+* In src/test/resources
+	* We keep utility files which is being used in test cases
+
+* Create a Maven project, push it into Git and add collaborators
+
+
+
+
+		
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+		
+
+
