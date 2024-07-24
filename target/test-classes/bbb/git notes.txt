@@ -1,0 +1,28 @@
+Day 6 (23/07/2024)
+		
+Different ways to import a maven project into Eclipse 
+	* clone the project using git bash and import the existing project into Eclipse 
+	* clone the project using eclipse and followed by import the existing project into Eclipse
+	* clone the project in git perspective and import the existing project into Eclipse
+	* download the project into your local and import the existing project into Eclipse
+	
+* What is .gitignore file and how it works 
+
+* How to access build path of a project
+
+* How and why to update the maven project
+
+* Run as 
+	* Maven clean
+	* Maven install
+	
+* In src/main/java
+	* We keep development related files
+* In src/main/resources
+	* We keep utility files which is being used in development files
+* In src/test/java
+	* We keep test case files
+* In src/test/resources
+	* We keep utility files which is being used in test cases
+
+* Create a Maven project, push it into Git and add collaborators
