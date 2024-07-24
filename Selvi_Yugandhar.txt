@@ -340,6 +340,163 @@ Different ways to import a maven project into Eclipse
 
 * Create a Maven project, push it into Git and add collaborators
 
+************************************************************************************
+
+Day 7 (24/07/2024)
+
+Class - important thing, through which we perform some task. Class may contains methods and variables
+
+Method1 - A work
+Method2 - B work
+Method3 - C work ( A work + some other work = method1 + some other work)
+
+redundant - repeatable 
+reuse
+No. of line will reduce 
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Variables
+
+Variables - shape and count/name
+shape - datatype 
+
+
+
+Syntax:-
+	AccessModifier datatype variableName = variableValue
+	public int a = 10;
+	private String b = "xyz";
+	
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Datatype: Its a classification of a data, which tells the compiler or interpreter 
+about how the programmer intends to use the data.
+
+1) Primitive
+	a) boolean - yes or no OR true or false 
+		* boolean aa = true; --> Variable declared and initialized
+		* boolean ab;  --> Variable declared but not initiated.
+			- default value will be assigned to ab is "false";
+	
+	b) Textual 
+		1) char - a, b, c, A, B
+			* char ba = 'a';
+			* char bb = '1';
+			* default value of char is null;
+		2) byte - 
+			byte x = 10;
+	c) numeric 
+		1) int 
+			* int cc = 10;
+			* default value = 0;
+		2) short
+			* short dd = 20;
+			* default value = 0;
+		3) double
+			* double ee = 30d;
+			* default value = 0;
+		4) long
+			* long ff = 20l;
+			* default value = 0;
+		5) float
+			* float gg = 2.5f;
+			* default value = 0;
+
+2) Non Primitive
+	d) String - In java, String is a Non-Primitive data type but at the same time its a Class.
+		* String hh = "aA10@";
+		* String ii = "In java, String is a Non-Primitive data type but at the same time its a Class.";
+		* String jj = "null";
+		* default = null;
+	e) array
+	
+int a; - declare
+a = 10; - define/initiate/assign
+int a = 10 - declare and initiate
+
+int a = 10;
+int - data type( primitive --> numeric)
+a - variable/variableName;
+10 - value posses by the variable/ value pointed by the variable
+
+If you want 10, you need to call 'a' only. 
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+Variables - Its a memory location that can hold values of a specific datatype.
+
+Types of variables 
+1. Local variable - 
+	* Datatype declared/initiated within a method/constructor, for, if    -- block ({...})
+	* scope of local variable is only within the block in which the variable is declared
+	* initialization of local variable is mandatory
+	* local variables can not be static
+	{
+	int a = 10;
+	char c;
+	c = '2';
+	String sathya = "10";
+	static int b = 10; -- we can not create like this.
+	}
+	
+2. Instance variable/class variable/non-static variable
+	* Declared within a class but outside of a block ({...})
+	* Non- static variables
+	* To access instance variables, we need to create object for that class
+	
+	classA {
+	int a = 10; //class level non static variable
+	String sathya = "10"; //class level non static variable
+	
+	method1() {
+	int  aa = 10; // local variable
+	
+	sysout(sathya); // we can not use a non static like this. we need to create object
+	// it should be written as 
+	ClassA obj = new ClassA(); //object creation
+	sysout(obj.a);
+	}
+	
+	}
+	
+	
+3. static variable
+	* Declared within a class but outside of a block with "static" keyword
+	* static keyword is used with variables and methods
+	* To access this variable, dont need to create an object
+	* within a class - static can be used anywhere directly (in a static method or in non-static method)
+	* Outside class - static can be used but along with class name. (in a static method or in non-static method)
+	
+	static int a = 10;
+	static String sathya = "10";
+	public static int c = 200;
+	
+ClassA (TalukOffice) {
+
+static int a = 10;
+//a = receptionist;
+
+method1() {
+	print (a);
+}
+
+}
+
+
+ClassB (Govt hospital) {
+
+method2() {
+print (ClassA.a);
+//print (TalukOffice.receptionist)
+}
+	
+
+	
+
+
+
 
 
 
