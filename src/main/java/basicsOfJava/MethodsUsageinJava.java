@@ -1,14 +1,14 @@
 package basicsOfJava;
 
-public class Demo {
+public class MethodsUsageinJava {
 
 	public static void main(String[] args) {
 		System.out.println("I am the main method");
 		method1(); // Static method called to main method with in the class
-		Demo dd = new Demo(); // creating the object the to call a non static method within the class
+		MethodsUsageinJava dd = new MethodsUsageinJava(); // creating the object the to call a non static method within the class
 		dd.method2(); // non static method within the class
 		dd.method3(); // non static method with in the class
-		Practice new1 = new Practice(); // creating the object to call a non static method outside of class
+		Practice new1 = new Practice(); // creating the object to call a non static method outside of class with class
 		new1.method4(); // non static method outside of class
 		Practice.method5(); // calling the static method of outside class using class name . static method
 		// name
@@ -28,7 +28,7 @@ public class Demo {
 	public void method3() {
 		System.out.println("I am Method3 and I am notn-static");
 		method1();
-		Demo dd = new Demo();
+		MethodsUsageinJava dd = new MethodsUsageinJava();
 		dd.method2();
 
 	}
