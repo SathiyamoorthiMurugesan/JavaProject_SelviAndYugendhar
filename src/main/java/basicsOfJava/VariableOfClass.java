@@ -1,4 +1,5 @@
 package basicsOfJava;
+import diffPackage.*;
 
 public class VariableOfClass {
 	int a = 10;
@@ -20,6 +21,8 @@ public class VariableOfClass {
 		obj2.main1();
 		Abc1 obj3= new Abc1();
 		obj3.main2();
+		VariableOfClass2.main(args);
+		
 
 	}
 	
