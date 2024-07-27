@@ -491,6 +491,175 @@ method2() {
 print (ClassA.a);
 //print (TalukOffice.receptionist)
 }
+
+
+***********************************************************************
+
+Day 7 (27/07/2024)
+
+Access Modifier
+	* It defines where and who can use a method/variable/class
+	1) default
+	2) private
+	3) protected
+	4) public 
+	
+	Syntax = accessModifier dataType variableName/variable = variableValue (Could be local variable or non-static variable)
+		   = static accessModifier dataType variableName/variable = variableValue (class level variable or static variable)
+		   
+	int a = 10; - default (no need to mention "default" word
+	private int a = 10;
+	protected int a = 10;
+	public int a = 10;
+	
+	
+	packageA
+		classA ( int a = 10)
+			ClassAA (same package of ClassA and sub class of ClassA)
+		classB (same package but non sub class of A)
+	packageX
+		classX (diff package non sub class of ClassA)
+		classXA (diff package but sub class of A)
+		
+	
+How ClassA and other Classes can use variable 'a' based on its access modifier.
+
+                                     | default |  private  | protected  | public 
+									 |         |           |            | 
+classA ( int a = 10)                 | yes     | yes       | yes        | yes
+									 |         |           |            |
+same package but sub class           | yes     | no        | yes        | yes 
+									 |         |           |            |
+same package but non sub class       | yes     | no        | yes        | yes
+									 |         |           |            |
+different package but sub class      | no      | no        | yes        | yes
+									 |         |           |            |
+different package but non sub class  | no      | no        | no         | yes
+
+ClassA {
+
+int a = 10;
+private int b = 100;
+protected int c = 20;
+public int d = 15
+
+method1() {
+ClassA obj = new ClassA();
+print (obj.a); 
+print (obj.b);
+print (obj.c);
+print (obj.d); 
+}
+
+}
+
+ClassAA following ClassA {
+or
+ClassAA extends ClassA {
+
+ClassA obj = new ClassA();
+method1() {
+print (obj.a); 
+print (obj.b);
+print (obj.c);
+print (obj.d); 
+}
+}
+
+ClassB {
+
+ClassA obj = new ClassA();
+method1() {
+print (obj.a); 
+print (obj.b);
+print (obj.c);
+print (obj.d); 
+}
+}
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+JVM, JRE, JDK
+
+our codes - English - .java
+compile - .class - byte code (machine recognizable language). 
+			it is available in target folder.
+
+
+JVM - Java Virtual Machine 
+* This can not be seen
+* it starts the execution(creates Runtime Environment)
+* It first checks for main method
+* It creates the code flow, in java the flow is called "Thread" 
+* JVM provides run time environment in which Java byte codes can be executed
+* loads code| verifies code| execute code| provides run time environment
+
+JRE - Java Runtime Environment
+* Physically exist
+* Contains JVM and set of libraries
+* JVM uses these libraries to execute the codes
+
+JDK - Java Developement kit
+* It contains JVM, set of libraries and dev tools (JRE + dev tools)
+* Used to develop and execute the codes
+* Dev tools + debugger + compiler + java doc
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Java keywords
+new, class, interface, abstract, access modifiers, data types, static, this, super, throw, throws, try, 
+catch, final, finally, data type, if, for, while, break, continue, switch, case;
+
+* dont create variables and method names using java predefined keywords 
+* Java is case sensitive language (Sathya, sathya)
+
+Naming conversion in java
+* Should not use above things
+* homepage - homePage (Camel case)
+
+If you are creating package, method name
+* should start with small letter followed by camel case
+
+if you are creating class or interface
+* should start with Captial letter followed by camel case
+
+thisIsPackageName 
+ThisIsClassName
+ThisIsInterfaceName
+
+thisIsMethodName
+thisIsObjectName or ThisIsObjectName
+thisIsVariableName
+
+package, method, object, variable - starts with small letter
+Class, Interface, Object - starts with Capital letter
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Methods in Java
+
+1) main method (static method)
+
+2) static method
+3) non static method
+
+4) method with parameter
+5) method without parameter
+
+6) method with return type
+7) method without return type
+
+Currently we focus on 2 & 3;
+
+public void method1() {
+
+}
+
+public static void method2() {
+
+}
+
 	
 
 	
