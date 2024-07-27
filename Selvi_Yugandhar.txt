@@ -228,8 +228,8 @@ Project
 * Project - consist of package/packages/file/files/folder/folders/source(src)folder
 
 * static - static means belongs to the class. If govt hospital is class, then hospital receptionist is a static member of that class. 
-We can not seperate them variables and methods can be static
-			within a class - static can be used anywhere directly (in a static method or in non-static method)
+                 We can not seperate them. variables and methods can be static
+			within a class - static can be used anywhere directly in the same (in a static method or in non-static method)
 			Outside class - static can be used but alone with class name. (in a static method or in non-static method)
 
 * Object (instantiation or initiation)  - E.g: Medical camp; 
@@ -532,7 +532,7 @@ same package but sub class           | yes     | no        | yes        | yes
 									 |         |           |            |
 same package but non sub class       | yes     | no        | yes        | yes
 									 |         |           |            |
-different package but sub class      | no      | no        | yes        | yes
+different package but sub class      | no      | no        | no         | yes
 									 |         |           |            |
 different package but non sub class  | no      | no        | no         | yes
 
@@ -660,7 +660,38 @@ public static void method2() {
 
 }
 
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Calling one method from another method
+
+* How calling a method differentiate within a class or outside class
+
+With in a class
+1. calling static method/variable from non-static method - direct call
+2. calling static method/variable from static method - direct call
+3. calling non-static method/variable from non-static method - direct call or object creation
+4. calling non-static method/variable from static method - Object creation 
+
+
+Outside class
+	1. calling static method/variable from non static method - using className
+	2. calling static method/variable from static method - using className
+	3. calling non-static method/variable from non-static method - Creating Object
+	4. calling non-static method/variable from static method - Creating Object 
 	
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Object creation - to call non-static members
+
+Within class we can have both static and non-static member. 
+
+1) We create object only for class.
+2) In order to access non static members of a class, we create object and access the methods and variables
+
+Objection definition - Whenever we create an Object for a class, whatever non-static members(methods and variables) present in that class 
+				will be copied and stored in heap memory. We call non-static members through Object creation only.
+				
+**********************************************************************
 
 	
 

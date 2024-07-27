@@ -18,7 +18,7 @@ public class ObjectCreation {
 //		ClassA obj = new ClassA();
 //	* For a single class, we can create multiple objects (either within class or outside class)
 //	* DEFINITION
-//		* Whenever we create Object for a class, whatever non-static members present in that class
+//		* Whenever we create an Object for a class, whatever non-static members present in that class
 //			will be copied and stored in heap memory
 			
 	int a = 10;
