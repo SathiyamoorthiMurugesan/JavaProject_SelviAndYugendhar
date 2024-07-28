@@ -810,6 +810,25 @@ str2 		Ranjith
 
 Unused Object "Sathya" in the memory will be cleared after sometime by Java Garbage collection process
 
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Data types as variables:-
+Variables in Java
+
+Based on where we create our data types or variable names, we categories variables in 3 types 
+
+1. Local variable
+2. Class level or instance variable or non-static variable
+3. static variable
+
+Variables as parameters 
+Variables as return type
+
+Class/interface/Object/Collection as parameter
+Class/interface/Object/Collection as return type
+
+
+***************************************************************
 
 
 

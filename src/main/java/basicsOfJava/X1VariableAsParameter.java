@@ -12,7 +12,7 @@ public class X1VariableAsParameter {
 	
 
 	int a = 10;
-	String str = "Sathya";
+	static String str = "Sathya";
 
 	public static void main(String[] args) {
 		
@@ -50,6 +50,11 @@ public class X1VariableAsParameter {
 		obj1.buySoapAndShampoo(10, "Lux", 10, "Chik");
 		obj1.buySoapAndShampoo(10, "Chik", 10, "Lux");
 //		obj1.buySoapAndShampoo("Chik", 10, "Lux", 10);
+		
+//		Using class level static and non-static variable as parameters;
+		
+		obj1.buySoap(obj1.a);
+		obj1.buySoap(str);
 		
 		
 //		Example: 
