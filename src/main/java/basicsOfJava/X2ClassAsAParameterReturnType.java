@@ -1,5 +1,9 @@
 package basicsOfJava;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class X2ClassAsAParameterReturnType {
 
 	public static void main(String[] args) {
@@ -18,8 +22,6 @@ public class X2ClassAsAParameterReturnType {
 
 		System.out.println(obj2.method1().a);
 		
-//		Example for Class as a return type: String class
-		
 		String str = "Sathya";
 		String aaa = str.toLowerCase();
 		System.out.println(aaa);
@@ -30,7 +32,18 @@ public class X2ClassAsAParameterReturnType {
 //		System.out.println("sathya".toUpperCase());
 //		System.out.println("SATHYA");
 		
+//		Example for Class as a return type: 
+//		String class in Java
 		
+//		Example for class as parameter
+//		findElement(By by); method in Selenium
+		WebDriver driver = new ChromeDriver();
+		By abc = By.id("");
+		driver.findElement(By.id(""));
+		driver.findElement(abc);
+		
+		driver.findElement(abc.id("").name(""));
+		driver.findElement(By.id("").id("").name(""));
 	}
 
 	public void methodA(ABC aaa) {

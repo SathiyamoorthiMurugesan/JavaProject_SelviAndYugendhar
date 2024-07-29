@@ -5,30 +5,54 @@ public class FinalVariable {
 	int a = 10;
 	static int b = 20;
 	
-//	final int aa;
-	final int aa = 10;
+	int personalLoanInterest; 
+	
+//	int homeLoanInterest;
 
+	final int homeLoanInterest =  10;
+	
+	
+	final int pFLoanInterest;
+	
+	public FinalVariable() {
+		pFLoanInterest = 15;
+	}
+	
+	public FinalVariable(int a) {
+		pFLoanInterest = 20;
+	}
+	
 	public static void main(String[] args) {
 		
+		
 		FinalVariable obj = new FinalVariable();
-		int c = 30;
+//		obj.a = 20;
+		System.out.println(obj.a);
+		System.out.println(b);
 		
-		System.out.println(obj.a + " "+ b +" "+ c);
+		System.out.println("Changing the value of the variables");
+		obj.a = 15;
+		System.out.println(obj.a);
 		
-		System.out.println(obj.a = 100);
+		b = 25;
+		System.out.println(b);
 		
-		System.out.println(b + 100);
+//		For Selvi
+		obj.personalLoanInterest = 10;
+//		For Yugandhar
+		obj.personalLoanInterest = 11;
 		
-		c = c + 100;
-		System.out.println(c);
+		System.out.println(obj.homeLoanInterest);
+//		obj.homeLoanInterest = 11;
 		
-		System.out.println(obj.a + " "+ b +" "+ c);
+//		assigning different values to a final variable using Constructor;
+		System.out.println(obj.pFLoanInterest);
 		
-		System.out.println(obj.aa);
-//		System.out.println(obj.aa = 100);
 		
-//		obj.aa = obj.aa + 100;
-
+		FinalVariable obj1 = new FinalVariable(10);
+		System.out.println(obj1.pFLoanInterest);
+		
+		
 	}
 
-}
+	}

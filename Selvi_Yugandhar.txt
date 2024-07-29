@@ -692,6 +692,9 @@ Objection definition - Whenever we create an Object for a class, whatever non-st
 				will be copied and stored in heap memory. We call non-static members through Object creation only.
 				
 **********************************************************************
+
+Day 8 (28/07/2024)
+
 What is heap memory? 
 
 Memory Management
@@ -827,8 +830,20 @@ Variables as return type
 Class/interface/Object/Collection as parameter
 Class/interface/Object/Collection as return type
 
+and its example from Java and Eclipse
 
-***************************************************************
+
+**********************************************************************
+
+Day 9 (29/07/2024)
+
+Constructor basics
+
+Final variable
+	* Usage of Constructor in Final variable
+	
+
+
 
 
 
