@@ -842,6 +842,38 @@ Constructor basics
 Final variable
 	* Usage of Constructor in Final variable
 	
+**********************************************************************
+
+Day 10 (30/07/2024)
+
+String basics
+String immutable 
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+TOPICs WE LEANRED TILL NOW
+
+Class
+Interface
+Access Modifier
+static
+Method
+	static or non-static 
+	parameter or without parameter
+	return type or without return type
+Data type - Variables
+	Local Variable
+	Non static variable
+	static variable
+Object Creation
+Constructor
+Final variable
+String basic
+
+
+
+
+
 
 
 
