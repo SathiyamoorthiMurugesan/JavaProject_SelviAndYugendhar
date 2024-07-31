@@ -1,4 +1,4 @@
-package basicsOfJava;
+package A1basicsOfJava;
 
 //* String is "Sequence of character" (Basic Explanation)
 //* In Java, It is array of character

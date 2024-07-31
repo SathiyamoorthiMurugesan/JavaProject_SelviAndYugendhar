@@ -12,7 +12,7 @@
 // * If a method have return type, consider that method as that data type itself.
 //		* means whatever calculation or manipulation we do on that data type, we can do it on the method
 
-package basicsOfJava;
+package A1basicsOfJava;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

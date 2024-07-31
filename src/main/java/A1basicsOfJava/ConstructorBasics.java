@@ -1,4 +1,4 @@
-package basicsOfJava;
+package A1basicsOfJava;
 
 // * Every class has its own constructor and we call it as default constructor;
 // * Default constructor is implicitly present inside the class;

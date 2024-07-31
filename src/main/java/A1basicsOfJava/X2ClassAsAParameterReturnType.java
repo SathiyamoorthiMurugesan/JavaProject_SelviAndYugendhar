@@ -1,4 +1,4 @@
-package basicsOfJava;
+package A1basicsOfJava;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

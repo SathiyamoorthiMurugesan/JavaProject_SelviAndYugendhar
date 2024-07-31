@@ -1,4 +1,4 @@
-package basicsOfJava;
+package A1basicsOfJava;
 
 public class MultipleReturn {
 	
