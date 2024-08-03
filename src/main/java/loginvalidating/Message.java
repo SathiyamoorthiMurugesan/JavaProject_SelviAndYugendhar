@@ -7,7 +7,7 @@ public class Message {
 	{
 		System.out.println("\n\n\nBe ready with the Package");
 		System.out.println("\n\n\n\n\nLogged out");
-		Loops.main(args);
+		Login.main(args);
 	}
 
 }

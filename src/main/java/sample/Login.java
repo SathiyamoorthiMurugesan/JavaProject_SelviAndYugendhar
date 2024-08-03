@@ -2,7 +2,7 @@ package sample;
 import java.util.Scanner;
 import loginvalidating.*;
 
-public class Loops{
+public class Login{
 
 
 	public static void main(String[] args) {

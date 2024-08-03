@@ -32,7 +32,7 @@ class Logincheck{
 		    else
 		    {
 		    	System.out.println("\n\n\nLogin Failed");
-		    	Loops.main(null);
+		    	Login.main(null);
 		    }
 		
 	}

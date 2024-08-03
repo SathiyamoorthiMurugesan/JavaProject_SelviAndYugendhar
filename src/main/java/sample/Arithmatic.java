@@ -13,7 +13,7 @@ public class Arithmatic {
 		
 
 	}
-	public static void keygen() {
+	public static int keygen() {
 		Scanner key1 = new Scanner(System.in);  
 	    System.out.println("\n\n\n\nEnter Secret Key:");
 
@@ -23,7 +23,16 @@ public class Arithmatic {
 	    {
 	    	Message.main(null);
 	    }
+	    else if (secretKey.equals("0"))
+	    {
+	    	Message.main(null);    	
+	    }
+	    else {
+	    	return 0;
+	    }
+	    return 0;
 	}
+	
 	
 
 }
