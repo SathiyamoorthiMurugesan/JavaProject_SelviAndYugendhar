@@ -17,10 +17,10 @@ public class CallingMethods {
 		
 		dd.method3();
 		
-		Practice123 obj = new Practice123();
-		obj.method4();
-		
-		Practice123.method5();
+//		Practice123 obj = new Practice123();
+//		obj.method4();
+//		
+//		Practice123.method5();
 	}
 	
 //	withInAClass(from)		static			non-static
@@ -52,9 +52,9 @@ public class CallingMethods {
 		CallingMethods dd = new CallingMethods();
 		dd.method2();
 		
-		Practice123.method5();
-		Practice123 obj = new Practice123();
-		obj.method4();
+//		Practice123.method5();
+//		Practice123 obj = new Practice123();
+//		obj.method4();
 		
 	}
 	

@@ -22,6 +22,10 @@ package A2interfaceInJava;
 //We can create a interface within a interface
 
 public interface LearnInterface {
+	
+//	public LearnInterface() {
+//		
+//	}
 
 	int a = 10;
 	public int b = 10;

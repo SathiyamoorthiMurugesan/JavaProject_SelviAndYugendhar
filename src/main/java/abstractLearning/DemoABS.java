@@ -72,6 +72,8 @@ class BBB extends DemoABS {
 		
 		DemoABS.method41();
 		
+//		DemoABS obj2 = new DemoABS();
+		
 	}
 
 	@Override
@@ -91,4 +93,30 @@ class BBB extends DemoABS {
 		// TODO Auto-generated method stub
 		
 	}
+}
+
+class CCABS extends DemoABS {
+	
+	public static void main(String[] args) {
+//		DemoABS obj = new DemoABS();
+	}
+
+	@Override
+	public void method1() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	protected void method12() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void method13() {
+		// TODO Auto-generated method stub
+		
+	}
+	
 }
