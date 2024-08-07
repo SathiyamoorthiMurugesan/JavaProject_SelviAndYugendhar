@@ -914,6 +914,20 @@ final
 
 **************************************************************************
 	
+Day 16 (7/08/2024)
+
+super, this, super() and this();
+
+Understanding System.out.println();
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Blocks in Java
+static 
+
+try catch block - before that we need knowledge on Error and Exception.
+
+********************************************************************
 
 
 
