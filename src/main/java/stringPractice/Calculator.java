@@ -50,7 +50,7 @@ class Addition extends Calculator implements Addition1{
 		System.out.println(b);
 		a=a+b;
 		System.out.println("Enter the Number to Add the value or give 0 to Stop the calculation");
-		while(c<=0)
+		do
 		{
 			b1=a1.nextInt();
 			System.out.println("Number Entered :"+b1);
@@ -68,7 +68,7 @@ class Addition extends Calculator implements Addition1{
 				
 		
 			}
-		}
+		}while(c<=0);
 		return 0;	
 
 
