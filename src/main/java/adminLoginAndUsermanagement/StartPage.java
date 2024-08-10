@@ -63,17 +63,17 @@ class SignInPage extends StartPage {
 
 	public void signIn() {
 
-		ClearConsole.clearConsole();
-		Scanner sc1=new Scanner(System.in);
-		Scanner sc2=new Scanner(System.in);
-		System.out.println("************************************");
-		System.out.print("UserName: ");
-		String userName=sc1.nextLine();
-		System.out.print("Password: ");
-		String passWord=sc2.nextLine();
-		System.out.println("************************************");
+//		ClearConsole.clearConsole();
+//		Scanner sc1=new Scanner(System.in);
+//		Scanner sc2=new Scanner(System.in);
+//		System.out.println("************************************");
+//		System.out.print("UserName: ");
+//		String userName=sc1.nextLine();
+//		System.out.print("Password: ");
+//		String passWord=sc2.nextLine();
+//		System.out.println("************************************");
 		UserCred login1 = new UserCred();
-		login1.loginValidate(userName, passWord);
+		login1.loginValidate();
 	
 		
 
