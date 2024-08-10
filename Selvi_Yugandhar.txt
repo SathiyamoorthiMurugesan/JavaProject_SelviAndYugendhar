@@ -939,8 +939,27 @@ Exception in detail!
 
 Day 18 (9/08/2024)
 
+How to local variable value outside of a method
+	* By return type
+	* By assigning local variable value to class level variable
 
+Getters and setters
 
+***************************************************************
+
+Day 19 (10/08/2024)
+
+If loop
+Basic for loop
+Switch condition
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+throw, throws and throwable
+
+Scanner class
+
+*****************************************************************
 
 
 
