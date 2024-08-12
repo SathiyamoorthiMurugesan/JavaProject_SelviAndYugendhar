@@ -249,6 +249,8 @@ Project
 
 Day 4 (21/07/2024)
 
+*****https://www.shellhacks.com/git-create-new-branch/****
+
 Git basics
 
 * helps to work on a same file by multiple person. 
@@ -961,6 +963,12 @@ Scanner class
 
 *****************************************************************
 
+Day 20 (12/08/2024)
+
+1
+1 2
+1 2 3
+1 2 3 4
 
 
 
