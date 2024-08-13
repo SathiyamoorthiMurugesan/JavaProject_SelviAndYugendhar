@@ -44,6 +44,7 @@ public class ForEach {
 		for (int i = 0; i < 5; i++) {
 			System.out.println(onePlus[i]);
 		}
+		
 
 		System.out.println("For each**********");
 		for (String eachPhone : onePlus) {
@@ -52,7 +53,7 @@ public class ForEach {
 
 		int a[] = { 1, 2, 3, 4, 5 };
 
-		for (int eachValue : a) {
+		for (int eachValue: a) {
 			System.out.println(eachValue);
 		}
 

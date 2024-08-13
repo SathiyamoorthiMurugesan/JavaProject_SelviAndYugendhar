@@ -965,10 +965,20 @@ Scanner class
 
 Day 20 (12/08/2024)
 
-1
-1 2
-1 2 3
-1 2 3 4
+For loop patterns
+
+Debug
+
+How to write dynamic/generic methods
+
+*****************************************************************
+
+Day 21 (13/08/2024)
+
+array
+
+
+
 
 
 
