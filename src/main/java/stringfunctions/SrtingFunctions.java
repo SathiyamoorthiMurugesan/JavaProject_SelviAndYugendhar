@@ -15,6 +15,8 @@ public class SrtingFunctions {
 				
 		System.out.println("\nCharAt Function - charAt(index)");
 		System.out.println("printing the paticular index on a string : = "+str4.charAt(0));
+		System.out.println("printing the paticular index on a string : = "+str4.charAt(2));
+		
 		
 		// isEmpty() only returns true when the String doesn't contain any character
 		System.out.println("\nChecking the given string empty or not using - isEmpty() ");
