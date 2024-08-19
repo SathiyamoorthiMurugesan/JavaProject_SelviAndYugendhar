@@ -991,6 +991,19 @@ String class and its methods
 
 **********************************************************************
 
+Day 23 (19/08/2024)
+
+array interview 
+1) sort
+
+String interview questions practice
+
+1) reverse a string - 3 technique
+2) count total words  in a sentence
+3) reverse each words in a sentence
+4) count each words/letters in a sentence or word respectively
+
+
 
 
 

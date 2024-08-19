@@ -117,6 +117,13 @@ public class DemoArray {
 			System.out.println(array[i]);
 		}
 	}
+	
+	public void printCharArrayUsingBasicForLoop(char[] array) {
+		System.out.println("Values in the array are");
+		for (int i = 0; i < array.length; i++) {
+			System.out.println(array[i]);
+		}
+	}
 
 	public void printIntArrayUsingForEach(int[] arr) {
 		for (int eachValue : arr) {
