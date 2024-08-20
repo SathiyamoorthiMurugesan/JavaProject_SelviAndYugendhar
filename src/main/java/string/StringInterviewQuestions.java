@@ -18,7 +18,7 @@ public class StringInterviewQuestions {
 		
 		reverseAllWordsInASentence();
 	}
-
+	
 	public static void practiceCharAtMethod() {
 		String str = "Sathya";
 

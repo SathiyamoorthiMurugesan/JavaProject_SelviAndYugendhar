@@ -1004,6 +1004,20 @@ String interview questions practice
 4) count each words/letters in a sentence or word respectively
 
 
+**********************************************************************
+
+Day 24 (20/08/2024)
+
+Collection overview
+Wrapper classes
+Thread overview
+StringBuilder and StringBuffer
+
+Collection hierarchy in detail
+
+
+
+
 
 
 
