@@ -16,6 +16,7 @@ public class ArrayListClass {
 //	 * 	Its a resizeable array
 //	 * 	Each ArrayList has a capacity and it will increase automatically if we add values more than the given capacity
 //	 * 	Initial size of ArrayList is 10 if no size is mentioned while declaring ArrayList
+
 //	 * 	ArrayList can be declared as below
 //	  		ArrayList li = new ArrayList(); //since it is a non-generic ArrayList, we can add any object such as Integer, String etc.,
 //			List list = new ArrayList();  //since it is a non-generic ArrayList, we can add any object such as Integer, String etc.,
@@ -23,6 +24,7 @@ public class ArrayListClass {
 //			ArrayList<Integer> AI = new ArrayList<Integer>();
 //			ArrayList<String> AS = new ArrayList<String>(10); //Generic ArrayList, we can only add String
 //			ArrayList<String> AS1 = new ArrayList<String>(AS);
+	
 //	 * 	Useful methods in ArrayList
 //	 * 		All the methods declared in Collection and List interfaces are implemented in this class and along with that we have below methods
 //	 * 		trimToSize();

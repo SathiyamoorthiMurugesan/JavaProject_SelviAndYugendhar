@@ -76,7 +76,7 @@ public class HashSetPractise {
 		sone.add(1);
 		sone.add(2);
 		sone.add(3);
-		sone.add(3);
+		sone.add(1);
 		sone.add(4);
 		System.out.println(sone);
 		a=sone.size();

@@ -115,30 +115,69 @@
 
 package collections;
 
-import java.util.ArrayList;
-import java.util.Iterator;
+//import java.util.ArrayList;
+import java.util.*;
+
+import array.DemoArray;
 
 public class ArrayListDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		ArrayList<Integer> a= new ArrayList<Integer>(10);
-		System.out.println(a.size());
-		a.add(10);
-		a.add(20);
-		a.add(30);
-		System.out.println(a);
-		System.out.println(a.size());
 		
-		for(int i = 0; i<a.size();i++) {
-			System.out.println(a. get(i));
+		List<Integer> list = new ArrayList<Integer>();
+		ArrayList<Integer> list2 = new ArrayList<Integer>();
+		ArrayList<Integer> list1 = new ArrayList<Integer>(10);
+		
+		list2.add(20);
+		list2.add(10);
+		list2.add(20);
+		list2.add(null);
+		list2.add(null);
+		
+		System.out.println(list2);
+		
+		for(int i = 0; i<list2.size(); i++) {
+			System.out.println(list2.get(i));
 		}
 		
-		Iterator<Integer> ite = a.iterator();
-		while(ite.hasNext()) 
-		{
+		
+		for(Integer each: list2) {
+			System.out.println(each);
+		}
+		
+		Iterator<Integer> ite = list2.iterator();
+		while(ite.hasNext()) {
 			System.out.println(ite.next());
 		}
+		
+		Spliterator<Integer>  spIte = list2.spliterator();
+		
+		System.out.println("Iterate Arraylist using List Iterator");
+		ListIterator<Integer> liIte = list2.listIterator();
+		
+		System.out.println(liIte.nextIndex());
+		System.out.println(liIte.previousIndex());
+		
+		while(liIte.hasNext()) {
+			System.out.println(liIte.next());
+		}
+		
+		System.out.println(liIte.nextIndex());
+		System.out.println(liIte.previousIndex());
+		
+		while(liIte.hasPrevious()) {
+			System.out.println(liIte.previous());
+		}
+		
+		System.out.println(liIte.nextIndex());
+		System.out.println(liIte.previousIndex());
+		
+		
+		Object[] abc = list2.toArray();
+//		Integer[] abc = (Integer[]) list2.toArray();
+		
+		DemoArray obj = new DemoArray();
+		
 		
 	}
 
