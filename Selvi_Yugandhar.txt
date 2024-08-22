@@ -1015,6 +1015,18 @@ StringBuilder and StringBuffer
 
 Collection hierarchy in detail
 
+**********************************************************************
+
+Day 25 (21/08/2024)
+
+Arralist and HashSet in detail
+
+**********************************************************************
+
+Day 26 (22/08/2024)
+
+HashMap in detail
+
 
 
 

@@ -72,10 +72,11 @@ public class HashMapClass {
 
 		System.out.println(marks);
 
-		System.out.println("******* Iterating key and values using foreach loop*****");
 		Map<String, Integer> marks10 = new HashMap<String, Integer>();
 		marks10.putAll(marks);
+		System.out.println(marks10);
 		
+		System.out.println("******* Iterating key and values using foreach loop*****");
 		Set<String> keys = marks.keySet();
 		for(String each: keys) {
 			System.out.println(each);
