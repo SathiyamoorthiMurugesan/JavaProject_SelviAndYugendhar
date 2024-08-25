@@ -20,6 +20,12 @@ public class Setpractice {
 		for(String each: values) {
 			System.out.println(each);
 		}
+		Iterator<Integer>  iterator1 = ((Set<Integer>) list1).iterator();
+		
+		if(iterator1.hasNext())
+		{
+			System.out.println(iterator1.next());
+		}
 		
 		
 		
