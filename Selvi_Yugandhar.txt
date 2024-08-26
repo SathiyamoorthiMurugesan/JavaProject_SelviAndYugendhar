@@ -1019,13 +1019,65 @@ Collection hierarchy in detail
 
 Day 25 (21/08/2024)
 
-Arralist and HashSet in detail
+Arraylist and HashSet in detail
 
 **********************************************************************
 
 Day 26 (22/08/2024)
 
 HashMap in detail
+
+**********************************************************************
+
+Day 27 (26/08/2024)
+
+How to read property file
+
+* File name with extn: abc.properties
+* key value pair 
+	* Both key and value are String
+* name = Sathya
+* Age = 32
+
+
+
+Home work
+
+How to read excel and CSV file
+	1) Excel file reading using apache POI API
+	2) Excel file reading using fillo API
+	
+How to work with APACHE POI API
+* File location - 
+* file name
+* file extension - .xls, xlsx - workbook
+* sheet name 
+* row and column 
+	th - header
+	tr - row
+	td - data 
+
+* getStringCellValue();
+* getNumbericCellValue();
+
+* How to get entire row values
+	Header: column
+	Name: Sathya
+	Company: TCS
+	
+S.no Name Age Company Experience
+1 Sathya 32	TCS	12
+
+How to work with Fillo API
+	* SQL (basic select)
+	
+	
+	3) Create a file using Java
+	4) Delete a file using Java
+	
+******************************************************************
+	
+
 
 
 
