@@ -10,6 +10,8 @@ public class PropertyFileReading {
 	static String filePath = ".\\src\\test\\resources\\file2.properties";
 
 	public static void main(String[] args) throws Exception {
+		
+//		WebDriver
 
 		System.out.println(System.getProperty("user.dir"));
 		String projectLocation = System.getProperty("user.dir");
