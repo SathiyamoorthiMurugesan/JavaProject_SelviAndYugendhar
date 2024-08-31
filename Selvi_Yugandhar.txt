@@ -1209,7 +1209,7 @@ WebDriver - interface
 * The main properties of a browser are created as methods inside WebDriver interface
 
 
-get()
+get(String url)
   * In this method only we pass application URL
 getCurrentUrl()
 	* It gives currently focused window's URL. So that we can validate against requirement that, URL is correct 
@@ -1255,6 +1255,7 @@ TargetLocator switchTo()
 	2) switchTo().frame()
 	3) do some action on any element inside the frame 
 	4) switchTo().defaultContent();
+	
 	
 	WebDriver window(String nameOrHandle);
 		****WebDriver.switchTo().window();*******
@@ -1334,6 +1335,192 @@ Options manage()
 	
 	
 	opt.getCookies();
+	
+******************************************************************
+
+Day 29 (28/08/2024)
+	
+	
+What is WebElement 
+	* It is a interface which follows SearchContext (In Java)
+	* Whatever element you see on a web page is called WebElement (For understanding)
+	
+click();
+submit();
+sendKeys();
+clear();
+getTagName();
+getDomAttribute();
+getAttribute();
+isSelected();
+isDisplayed();
+isEnabled();
+getText();
+findElement();
+findElements();
+getLocation();
+getSize();
+getRect();
+getCssValue();
+
+Hirarchy 
+* SearchContext Interface (findElement, findElements)
+* WebDriver Interface ( Basic methods for a browser) 
+* RemoteWebDriver Class( all basic methods are implemented here)
+* Classes ChromeDriver, FirefoxDriver, etc.. 
+
+
+interface SearchContext {
+
+}
+
+interface WebDriver extends SearchContext {
+
+}
+
+class RemoteWebDriver implements WebDriver {
+
+}
+
+class ChromeDriver extends RemoteWebDriver {
+
+}
+
+
+********************************************************************
+
+Day 30 (31/08/2024
+
+Whatever element you see on a web page is called WebElement
+
+What is WebElement
+	* DOM (right click on a page and inspect or F12 or Ctrl+Shift + I)
+	
+	* diff types of tags
+		* html
+		* body
+		* header
+		* input
+		* div
+		* ul
+		* li
+		* a 
+		* svg
+		* select (drop down)
+		* frame or iframe (small html)
+		* table
+			* th 
+			* tr
+			* td
+			
+		* <table>
+			<div>
+				<tr>
+					<th>
+					<th>
+					<th>
+				<tr>
+					<td>
+					<td>
+				<tr>
+					<td>
+					<td>
+
+* attributes
+	whatever key value pair we see inside any tag is called attributes
+	
+	<div> - start tag
+	
+	</div> - end tag
+	
+	<div key1 = "val1" key2 = "val2" > - start tag
+	"text" 
+	</div>
+	
+	where
+	div - tagName
+	key1, key2 - attributes
+	val1, val2 - attribute's value
+	"text" - tag's display name
+
+How to find element in a page 
+
+<html>
+
+ancestor(div)
+  parent(div)
+	parent(ul)
+		child(li)
+			child(select)
+		child(ul)
+			child(li)
+			child(li)
+	parent(ul)
+	parent(li)
+ancestor(div)
+	parent(div)
+		child(div)
+</html>
+
+ancestor
+parent
+child
+siblings
+following ancestor, parent, child, siblings
+preceding ancestor, parent, child, siblings
+text
+contains(text, 'Sathya')
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+We find elements in a page using locators 
+
+Locators in selenium - 
+	locator value should not be duplicate. must be unique
+		means, id = "sathya" should be present only once
+
+id 
+	* most preferred 
+	* do not use if it has numbers in it. 
+	* id = "abc123"; - DO NOT USER
+		* if we reload again, the id value may change to "abc114"
+name
+className
+	* with more spaces 
+tagName
+linkText
+partialLinkText
+CSS selector
+xpath -XML path
+
+
+id, name, className(class) - when these values are unique we can use them directly. When they are not unique, we use either xpath or CSS
+
+findElement(By.id(""));
+findElement(By.name(""));
+findElement(By.class(""));
+findElement(By.linkText("selenium"));
+findElement(By.linkText("Testing Frameworks"));
+findElement(By.linkText("Logging Frameworks"));
+findElement(By.parialLinkText("Frameworks"));
+
+
+	By obj1 = By.className("");
+		WebElement ele = driver.findElement(obj1);
+		ele.click();
+		
+		driver.findElement(By.className("")).click();;
+		
+		driver.findElement(By.id("")).sendKeys();
+
+* when id, name, className attributes are present in an element tag but they not unique, then we go to xpath 
+* When id, name, className attributes are not present inside an element's tag, then also we use xpath
+
+****************************************************************************************************
+
+Xpath - 
+
+
 
 
 

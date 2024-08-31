@@ -12,6 +12,7 @@ public class PropertyFileReading {
 	public static void main(String[] args) throws Exception {
 		
 //		WebDriver
+//		WebElement
 
 		System.out.println(System.getProperty("user.dir"));
 		String projectLocation = System.getProperty("user.dir");
