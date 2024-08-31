@@ -1,0 +1,1565 @@
+Day 1 (18/07/2024)
+* Eclipse basic
+	* disadvantages of accessing and running a file using cmd promt
+	* Eclipse is a 
+		* Editor tool
+		* it gives us a simple but advanced UI to view, edit and run our files in a very easy way.
+		
+*************************************************************************
+Day 1 (19/07/2024)
+
+Taluk office - class
+rooms - methods/functions
+
+Reception related things(table, phone, receptionist, computer) - static - belongs to the class
+
+Paper, pen, water can, water bottle, table, chairs, chalan - anyone can access - public
+Receptionist mobile, person's mobile/money/bike - private
+Documents - protected
+People - default
+
+Access Modifier - public, private, protected and default
+
+Variables
+    10 people/chair/table or 20 people/chair/table or 5 people/chair/table
+	- (10, 20 and 5)- variable values
+	- people/chair/table - type- datatype
+	- red table, red chairs or white chairs - naming - variable name
+
+chair red = 30;
+	Chair - datatype
+	red - variable name 
+	30 - variable value 
+public chair red = 20;
+private chair red = 2; 
+
+VARIABLE COMMON SYNTAX 
+	accessModifer datatype variableName = variableValue;
+
+
+Method - room
+	* Whatever happens inside is not visible to outside or other methods/rooms
+	* We can bring things from reception/hall to a method
+	* But we can not bring a thing from method/room to outside. In order to do that, we need to follow a process
+		- RETURN TYPE
+	* Most of the time method wont give us anything - VOID
+
+METHOD COMMON SYNTAX 
+	- AccessModifer returnType methodName() { }
+	- public void incomeTaxCertificateProcess() {
+		
+		}
+
+Taluk office - Class
+	- It does a set of works
+	- Methods are written inside a class
+
+CLASS COMMON SYNTAX 
+	- AccessModifier class(keyword) ClassName { }
+	- public class TalukOffice {
+
+		}
+	
+public class TalukOffice {
+                                     
+public chair red = 20;
+private chair red = 2;      
+
+	- public void incomeTaxCertificateProcess() {
+		
+		}
+	- public void MarriageCertificateProcess() {
+		
+		}
+
+public chair red = 20;
+private chair red = 2; 
+
+	- private void staffRoom() {
+
+		}
+	- protected void importantDocumentsRoom() {
+
+		}
+
+public chair red = 20;
+private chair red = 2; 
+	
+}
+
+* incomeTaxCertificateProcess - camelCase
+	- class names should start with CAPITAL LETTER and followed by camelCase
+	- method names should start with SMALL LETTER and followed by camelCase
+	- all the java keywords starts with SMALL LETTER such as class, public, void etc.
+
+
+People administration - package
+Chennai Taluk office - Class - parent class
+	below are sub classes of Chennai Taluk office 
+	- Velachery Taluk office - Class 
+		- Velachery east Taluk office - Class (He is sub class of Velachery class)
+	- Tambaram Taluk office - Class
+	- Guindy Taluk office - Class 
+
+Chennai Taluk Office - Parent class
+Velachery Taluk Office - Parent class
+Velachery East Taluk Office - Child class 
+
+VelacheryTalukOffice extends ChennaiTalukOffice { }
+VelacheryEastTalukOffice extends VelacheryTalukOffice { }
+
+We need someone or some office to create rules so that by using that every taluk office will work
+For that, in Java, we use interface 
+
+We create rules in interface
+COMMON SYNTAX FOR INTERFACE 
+	- AccessModifier interface(Java keyword) InterfaceName { }
+	- public interface PeopleAdministrationRules {
+	
+	}
+
+**************************************************************
+Day 3 (20/07/2024)
+
+
+public interface PeopleAdministrationRules {
+	
+	public void incomeCertificateProcess();
+
+	public void marriageCertificateProcess();
+	}
+
+public interface ChennaiEastPeopleAdminRules { 
+	}
+
+
+public interface ChennaiNorthPeopleAdminRules extends PeopleAdministrationRules { 
+	}
+
+public class ChennaiTalukOffice implements PeopleAdministrationRules {
+
+}
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+ChennaiGovtHospital conducts medical camp inside the campus - This event equal to Object Creation or Object Initiation or Object Instantiation in Java
+
+ChennaiGovtHospital MedicalCamp = new ChennaiGovtHospital
+ChennaiGovtHospital BloodDonationCamp = new ChennaiGovtHospital
+ChennaiGovtHospital EyeTestCamp = new ChennaiGovtHospital
+
+public class ChennaiGovtHospital {
+	ChennaiGovtHospital MedicalCamp = new ChennaiGovtHospital();
+}
+
+public class ChennaiPoliceStation { 
+	ChennaiGovtHospital MedicalCamp = new ChennaiGovtHospital();
+}
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Medical camp conducted by ChennaiGovtHospital is managed by a Clerk
+
+This Clerk is equal to "CONSTRUCTOR" in java
+	ChennaiGovtHospital MedicalCamp = new ChennaiGovtHospital();
+		- ChennaiGovtHospital - Constuctor
+
+CONSTRUCTOR COMMON SYNTAX 
+	- AccessModifier ClassName() { }
+	- public ChennaiGovtHospital() { 
+		}
+
+1) Constructor do not have return type;
+2) Constructor name should be as same as Class Name;
+3) By default, each class has its own Constructor and we call it as DEFAULT CONSTRUCTOR;
+
+
+Methods
+static
+Class
+Access Modifier
+Variables 
+Package
+Project
+Interface
+Object Creation
+Constructor
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+Project Structure 
+
+Project
+    sourceFolder
+	- package1
+		InterfaceA
+		InterfaceB
+		ClassA (Datatype/variables/methods)
+			ClassAA 
+			ClassAB
+		ClassB
+		ClassC
+	- package2
+		ClassA
+		ClassB
+		InterfaceC
+	- package3
+		ClassX
+		ClassA
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+* Class - It does a set of work. It consist of variables and methods. Each work would be done by methods. 
+
+* Methods - It does specific job. It always written inside a class
+
+* Variable - it can have type(Data type) and posses a number or name;
+			variables can have different access - access Modifier
+			
+* Access Modifier - defines where we can use a variable/method/class
+
+* Interface - It contains rules most of the time. Sometimes it does some work too(means method).
+			Interface is always followed by class/classes. 
+			When class follows interface, class should do the rule written in the interfacebject
+
+* package - contains class/classes/interface/interfaces/file/files/folder/folders
+
+* Project - consist of package/packages/file/files/folder/folders/source(src)folder
+
+* static - static means belongs to the class. If govt hospital is class, then hospital receptionist is a static member of that class. 
+                 We can not seperate them. variables and methods can be static
+			within a class - static can be used anywhere directly in the same (in a static method or in non-static method)
+			Outside class - static can be used but alone with class name. (in a static method or in non-static method)
+
+* Object (instantiation or initiation)  - E.g: Medical camp; 
+			We create Object only for classes; Whenever we create object we copy whatever the class contains(except static)
+			means, only non-static is copied
+			Through object we can not call static things.
+
+* Constructor - Object creation happens with the help of constructor
+				constructor is available in different kind
+				1. without any money/permission
+				2. only with money
+				3. only with permission
+				4. with both money and permission
+
+
+*************************************************************
+
+Day 4 (21/07/2024)
+
+*****https://www.shellhacks.com/git-create-new-branch/****
+
+Git basics
+
+* helps to work on a same file by multiple person. 
+* SCM - Source code management 
+
+Original project is in our system, we use Eclipse to view and edit the project in easy manner
+
+Git Repository - Repo- Remote - Remote project
+
+1) Create a Java project 
+2) Add some packages and classes and some files 
+3) In github.com, create a repository
+4) In File explorer, go to your Java project 
+5) From there open git bash andd type below commands
+	* git init -- it will create a local git with master branch
+	* git add .
+	* git commit -m "some messages"
+	* git remote add origin "repository's SSH path" - we are introducing online repository to local git 
+	* git push origin master
+	* git status
+	
+	* git config --global user.email "";
+	
+	
+**********************************************************
+Day 5 (22/07/2024)
+
+Maven - Dependencies management tool
+
+	* Difficulties in adding a .jar file into our project
+	* .M2 folder stores the dependencies added in pom.xml file
+	* Maven projects gives us a proper project structure
+	
+resolution:-
+	* Instead of Java project, create a maven project
+	* All maven project consist pom.xml file
+	* In pom.xml file, we add the required dependencies
+		* groupId
+		* artifactId
+		* version
+		* scope (optional)
+	* Eg:-
+		OnePlus - GroupID 
+		Mobile - ArtifactID
+		OnePlus11R - Version
+	* Eg:-
+		GroupID - selenium.org
+		ArtifactID - selenium-java
+		version - 4.20.1
+		
+* Home work
+	* Create Maven project
+	* push to git repo using git bash
+	* delete project from your system
+	* By using eclipse import the project directly from git(without RSA)
+	* Add RSA and then import directly from git
+	* Download the project from 
+		* https://github.com/SathiyamoorthiMurugesan/ABC
+		* Import this project into eclipse
+		
+************************************************************************************
+
+Day 6 (23/07/2024)
+		
+Different ways to import a maven project into Eclipse 
+	* clone the project using git bash and import the existing project into Eclipse 
+	* clone the project using eclipse and followed by import the existing project into Eclipse
+	* clone the project in git perspective and import the existing project into Eclipse
+	* download the project into your local and import the existing project into Eclipse
+	
+* What is .gitignore file and how it works 
+
+* How to access build path of a project
+
+* How and why to update the maven project
+
+* Run as 
+	* Maven clean
+	* Maven install
+	
+* In src/main/java
+	* We keep development related files
+* In src/main/resources
+	* We keep utility files which is being used in development files
+* In src/test/java
+	* We keep test case files
+* In src/test/resources
+	* We keep utility files which is being used in test cases
+
+* Create a Maven project, push it into Git and add collaborators
+
+************************************************************************************
+
+Day 7 (24/07/2024)
+
+Class - important thing, through which we perform some task. Class may contains methods and variables
+
+Method1 - A work
+Method2 - B work
+Method3 - C work ( A work + some other work = method1 + some other work)
+
+redundant - repeatable 
+reuse
+No. of line will reduce 
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Variables
+
+Variables - shape and count/name
+shape - datatype 
+
+
+
+Syntax:-
+	AccessModifier datatype variableName = variableValue
+	public int a = 10;
+	private String b = "xyz";
+	
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Datatype: Its a classification of a data, which tells the compiler or interpreter 
+about how the programmer intends to use the data.
+
+1) Primitive
+	a) boolean - yes or no OR true or false 
+		* boolean aa = true; --> Variable declared and initialized
+		* boolean ab;  --> Variable declared but not initiated.
+			- default value will be assigned to ab is "false";
+	
+	b) Textual 
+		1) char - a, b, c, A, B
+			* char ba = 'a';
+			* char bb = '1';
+			* default value of char is null;
+		2) byte - 
+			byte x = 10;
+	c) numeric 
+		1) int 
+			* int cc = 10;
+			* default value = 0;
+		2) short
+			* short dd = 20;
+			* default value = 0;
+		3) double
+			* double ee = 30d;
+			* default value = 0;
+		4) long
+			* long ff = 20l;
+			* default value = 0;
+		5) float
+			* float gg = 2.5f;
+			* default value = 0;
+
+2) Non Primitive
+	d) String - In java, String is a Non-Primitive data type but at the same time its a Class.
+		* String hh = "aA10@";
+		* String ii = "In java, String is a Non-Primitive data type but at the same time its a Class.";
+		* String jj = "null";
+		* default = null;
+	e) array
+	
+int a; - declare
+a = 10; - define/initiate/assign
+int a = 10 - declare and initiate
+
+int a = 10;
+int - data type( primitive --> numeric)
+a - variable/variableName;
+10 - value posses by the variable/ value pointed by the variable
+
+If you want 10, you need to call 'a' only. 
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+Variables - Its a memory location that can hold values of a specific datatype.
+
+Types of variables 
+1. Local variable - 
+	* Datatype declared/initiated within a method/constructor, for, if    -- block ({...})
+	* scope of local variable is only within the block in which the variable is declared
+	* initialization of local variable is mandatory
+	* local variables can not be static
+	{
+	int a = 10;
+	char c;
+	c = '2';
+	String sathya = "10";
+	static int b = 10; -- we can not create like this.
+	}
+	
+2. Instance variable/class variable/non-static variable
+	* Declared within a class but outside of a block ({...})
+	* Non- static variables
+	* To access instance variables, we need to create object for that class
+	
+	classA {
+	int a = 10; //class level non static variable
+	String sathya = "10"; //class level non static variable
+	
+	method1() {
+	int  aa = 10; // local variable
+	
+	sysout(sathya); // we can not use a non static like this. we need to create object
+	// it should be written as 
+	ClassA obj = new ClassA(); //object creation
+	sysout(obj.a);
+	}
+	
+	}
+	
+	
+3. static variable
+	* Declared within a class but outside of a block with "static" keyword
+	* static keyword is used with variables and methods
+	* To access this variable, dont need to create an object
+	* within a class - static can be used anywhere directly (in a static method or in non-static method)
+	* Outside class - static can be used but along with class name. (in a static method or in non-static method)
+	
+	static int a = 10;
+	static String sathya = "10";
+	public static int c = 200;
+	
+ClassA (TalukOffice) {
+
+static int a = 10;
+//a = receptionist;
+
+method1() {
+	print (a);
+}
+
+}
+
+
+ClassB (Govt hospital) {
+
+method2() {
+print (ClassA.a);
+//print (TalukOffice.receptionist)
+}
+
+
+***********************************************************************
+
+Day 7 (27/07/2024)
+
+Access Modifier
+	* It defines where and who can use a method/variable/class
+	1) default
+	2) private
+	3) protected
+	4) public 
+	
+	Syntax = accessModifier dataType variableName/variable = variableValue (Could be local variable or non-static variable)
+		   = static accessModifier dataType variableName/variable = variableValue (class level variable or static variable)
+		   
+	int a = 10; - default (no need to mention "default" word
+	private int a = 10;
+	protected int a = 10;
+	public int a = 10;
+	
+	
+	packageA
+		classA ( int a = 10)
+			ClassAA (same package of ClassA and sub class of ClassA)
+		classB (same package but non sub class of A)
+	packageX
+		classX (diff package non sub class of ClassA)
+		classXA (diff package but sub class of A)
+		
+	
+How ClassA and other Classes can use variable 'a' based on its access modifier.
+
+                                     | default |  private  | protected  | public 
+									 |         |           |            | 
+classA ( int a = 10)                 | yes     | yes       | yes        | yes
+									 |         |           |            |
+same package but sub class           | yes     | no        | yes        | yes 
+									 |         |           |            |
+same package but non sub class       | yes     | no        | yes        | yes
+									 |         |           |            |
+different package but sub class      | no      | no        | no         | yes
+									 |         |           |            |
+different package but non sub class  | no      | no        | no         | yes
+
+ClassA {
+
+int a = 10;
+private int b = 100;
+protected int c = 20;
+public int d = 15
+
+method1() {
+ClassA obj = new ClassA();
+print (obj.a); 
+print (obj.b);
+print (obj.c);
+print (obj.d); 
+}
+
+}
+
+ClassAA following ClassA {
+or
+ClassAA extends ClassA {
+
+ClassA obj = new ClassA();
+method1() {
+print (obj.a); 
+print (obj.b);
+print (obj.c);
+print (obj.d); 
+}
+}
+
+ClassB {
+
+ClassA obj = new ClassA();
+method1() {
+print (obj.a); 
+print (obj.b);
+print (obj.c);
+print (obj.d); 
+}
+}
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+JVM, JRE, JDK
+
+our codes - English - .java
+compile - .class - byte code (machine recognizable language). 
+			it is available in target folder.
+
+
+JVM - Java Virtual Machine 
+* This can not be seen
+* it starts the execution(creates Runtime Environment)
+* It first checks for main method
+* It creates the code flow, in java the flow is called "Thread" 
+* JVM provides run time environment in which Java byte codes can be executed
+* loads code| verifies code| execute code| provides run time environment
+
+JRE - Java Runtime Environment
+* Physically exist
+* Contains JVM and set of libraries
+* JVM uses these libraries to execute the codes
+
+JDK - Java Developement kit
+* It contains JVM, set of libraries and dev tools (JRE + dev tools)
+* Used to develop and execute the codes
+* Dev tools + debugger + compiler + java doc
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Java keywords
+new, class, interface, abstract, access modifiers, data types, static, this, super, throw, throws, try, 
+catch, final, finally, data type, if, for, while, break, continue, switch, case;
+
+* dont create variables and method names using java predefined keywords 
+* Java is case sensitive language (Sathya, sathya)
+
+Naming conversion in java
+* Should not use above things
+* homepage - homePage (Camel case)
+
+If you are creating package, method name
+* should start with small letter followed by camel case
+
+if you are creating class or interface
+* should start with Captial letter followed by camel case
+
+thisIsPackageName 
+ThisIsClassName
+ThisIsInterfaceName
+
+thisIsMethodName
+thisIsObjectName or ThisIsObjectName
+thisIsVariableName
+
+package, method, object, variable - starts with small letter
+Class, Interface, Object - starts with Capital letter
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Methods in Java
+
+1) main method (static method)
+
+2) static method
+3) non static method
+
+4) method with parameter
+5) method without parameter
+
+6) method with return type
+7) method without return type
+
+Currently we focus on 2 & 3;
+
+public void method1() {
+
+}
+
+public static void method2() {
+
+}
+
+**** Using local variable outside the method**********
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Calling one method from another method
+
+* How calling a method differentiate within a class or outside class
+
+With in a class
+1. calling static method/variable from non-static method - direct call
+2. calling static method/variable from static method - direct call
+3. calling non-static method/variable from non-static method - direct call or object creation
+4. calling non-static method/variable from static method - Object creation 
+
+
+Outside class
+	1. calling static method/variable from non static method - using className
+	2. calling static method/variable from static method - using className
+	3. calling non-static method/variable from non-static method - Creating Object
+	4. calling non-static method/variable from static method - Creating Object 
+	
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Object creation - to call non-static members
+
+Within class we can have both static and non-static member. 
+
+1) We create object only for class.
+2) In order to access non static members of a class, we create object and access the methods and variables
+
+Objection definition - Whenever we create an Object for a class, whatever non-static members(methods and variables) present in that class 
+				will be copied and stored in heap memory. We call non-static members through Object creation only.
+				
+**********************************************************************
+
+Day 8 (28/07/2024)
+
+What is heap memory? 
+
+Memory Management
+
+Heap memory
+Stack memory
+SCP (String Constant Pool - A part of heap memory)
+
+ClassA obj1 = new ClassA();
+
+ClassA - Reference Class Name
+Obj1 - Object variable
+new = key word to create an obj
+ClassA() - Constructor or Object creation or instance creation
+
+* Whenever we create an object for a class, whatever non-static variables and methods present in that class will be copied to heap memory
+* Object variable or instance variable, is stored in stack memory 
+* We can create multiple object for a single class
+
+public class ClassA {
+
+int a = 10; 
+
+public void method1() {
+	ClassA obj1 = new ClassA();
+	sysout(obj1.a);
+	
+	ClassA obj3 = new ClassA();
+	ClassA obj4 = new ClassA();
+}
+
+public void method2() {
+	ClassA obj2 = new ClassA();
+	sysout(obj1.a);
+}
+
+}
+
+	stack memory			Heap memory
+	obj1.				a = 10; method1(), method2();
+	obj2				a = 10; method1(), method2();
+	obj3				a = 10; method1(), method2(); 
+	
+	* In heap memory, only one copy of every class is available if you create multiple object 
+		for that class. So that we can save the memory space in heap memory.
+	
+	
+public class ClassA {
+int a = 10;
+}
+
+int a = 10; //class level non static
+* a = 10 - When it comes to variable,  the variable and its value, 
+				both will be stored in specific stack memory 
+
+SCP:- String constant pool
+There are two ways to create String in Java
+1. String Literals
+2. Object creation
+
+String Literals
+	String Sathya = "1000"; 
+	
+Sathya - Stack
+1000 - SCP of Heap memory 
+	
+Object creation for String
+	ClassA obj1 = new ClassA(); //its simple object creation
+	String Sathya = new String("1000"); //parameterized object creation
+
+Sathya - Stack memeory
+1000 and methods/variables in String class - Heap memory 
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+*****We will see it later******
+
+String immutable:-
+
+String str = "Sathya";
+String str1 = "Sathya";
+String str2 = "Ranjith";
+
+In Memory it looks like
+stack 		SCP
+str			Sathya 
+str1 		
+str2 		Ranjith
+
+str1 = str1 + str2;
+str1 = SathyaRanjith
+
+After manipulation what we think
+stack 		SCP
+str			SathyaRanjith
+str1 		
+str2 		Ranjith
+
+But what really happens in SCP memory.
+Whenever we manipulate String variable, String value never get changed. 
+Simply a new value is assigned to the manipulated String variable.
+
+stack 		SCP
+str			Sathya
+str1 		SathyaRanjith
+str2 		Ranjith
+
+str = str1 + str2;
+
+In SCP, after manipulation
+
+stack 		SCP
+str			SathyaRanjithRanjith ("Sathya" - will be in SCP but no one is looking for him)
+str1 		SathyaRanjith
+str2 		Ranjith
+
+Unused Object "Sathya" in the memory will be cleared after sometime by Java Garbage collection process
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Data types as variables:-
+Variables in Java
+
+Based on where we create our data types or variable names, we categories variables in 3 types 
+
+1. Local variable
+2. Class level or instance variable or non-static variable
+3. static variable
+
+Variables as parameters 
+Variables as return type
+
+Class/interface/Object/Collection as parameter
+Class/interface/Object/Collection as return type
+
+and its example from Java and Eclipse
+
+
+**********************************************************************
+
+Day 9 (29/07/2024)
+
+Constructor basics
+
+Final variable
+	* Usage of Constructor in Final variable
+	
+**********************************************************************
+
+Day 10 (30/07/2024)
+
+String basics
+String immutable 
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+TOPICs WE LEANRED TILL NOW
+
+Class
+Interface
+Access Modifier
+static
+Method
+	static or non-static 
+	parameter or without parameter
+	return type or without return type
+Data type - Variables
+	Local Variable
+	Non static variable
+	static variable
+Object Creation
+Constructor
+Final variable
+String basic
+
+**********************************************************************
+
+Day 11 (31/07/2024)
+
+Interface in detail
+
+**********************************************************************
+
+Day 12 (1/08/2024)
+
+Abstract class 
+
+**********************************************************************
+
+Day 13 (3/08/2024)
+
+OOPs concepts
+	* Encapsulation
+	* Abstraction
+	* Inheritance in detail
+	
+**********************************************************************
+
+Day 14 (5/08/2024)
+
+Polymorphism in detail
+	Overloading
+	Overriding
+	
+**********************************************************************
+
+Day 15 (6/08/2024)
+
+Constructor in details
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Keywords in Java
+
+static
+final
+
+**************************************************************************
+	
+Day 16 (7/08/2024)
+
+super, this, super() and this();
+
+Understanding System.out.println();
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Blocks in Java
+static 
+
+try catch block - before that we need knowledge on Error and Exception.
+
+********************************************************************
+
+Day 17 (8/08/2024)
+
+Exception in detail! 
+
+***************************************************************
+
+Day 18 (9/08/2024)
+
+How to local variable value outside of a method
+	* By return type
+	* By assigning local variable value to class level variable
+
+Getters and setters
+
+***************************************************************
+
+Day 19 (10/08/2024)
+
+If loop
+Basic for loop
+Switch condition
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+throw, throws and throwable
+
+Scanner class
+
+*****************************************************************
+
+Day 20 (12/08/2024)
+
+For loop patterns
+
+Debug
+
+How to write dynamic/generic methods
+
+*****************************************************************
+
+Day 21 (13/08/2024)
+
+array
+
+for each
+
+*****************************************************************
+
+Day 22 (15/08/2024)
+
+Multi-Dimentional array
+Jaggered array
+Arrays class
+
+String class and its methods
+
+**********************************************************************
+
+Day 23 (19/08/2024)
+
+array interview 
+1) sort
+
+String interview questions practice
+
+1) reverse a string - 3 technique
+2) count total words  in a sentence
+3) reverse each words in a sentence
+4) count each words/letters in a sentence or word respectively
+
+
+**********************************************************************
+
+Day 24 (20/08/2024)
+
+Collection overview
+Wrapper classes
+Thread overview
+StringBuilder and StringBuffer
+
+Collection hierarchy in detail
+
+**********************************************************************
+
+Day 25 (21/08/2024)
+
+Arraylist and HashSet in detail
+
+**********************************************************************
+
+Day 26 (22/08/2024)
+
+HashMap in detail
+
+**********************************************************************
+
+Day 27 (26/08/2024)
+
+How to read property file
+
+* File name with extn: abc.properties
+* key value pair 
+	* Both key and value are String
+* name = Sathya
+* Age = 32
+
+
+
+Home work
+
+How to read excel and CSV file
+	1) Excel file reading using apache POI API
+	2) Excel file reading using fillo API
+	
+How to work with APACHE POI API
+* File location - 
+* file name
+* file extension - .xls, xlsx - workbook
+* sheet name 
+* row and column 
+	th - header
+	tr - row
+	td - data 
+
+* getStringCellValue();
+* getNumbericCellValue();
+
+* How to get entire row values
+	Header: column
+	Name: Sathya
+	Company: TCS
+	
+S.no Name Age Company Experience
+1 Sathya 32	TCS	12
+
+How to work with Fillo API
+	* SQL (basic select)
+	
+	
+	3) Create a file using Java
+	4) Delete a file using Java
+	
+******************************************************************
+
+Day 28 (27/08/2024)
+
+* What is functional Testing
+* What is regression testing
+* Where do we need the automation most? Regression.
+
+
+
+What is window based or mac based application
+What is Web-Application
+
+What is browser - Basic functionalities in browser 
+What is Web-Based application
+	* What are the basic operation 
+	* What is elements
+	
+
+
+
+Selenium Basics
+
+Why we need automation - saves Time and Man power
+Benefits
+Different Automation tools and Editor
+Automation tools 
+	* Selenium
+	* UFT (QTP)
+	* PlayWrite
+	* RPA - Robotic process automation
+	
+Editor 
+	* Eclipse
+	* STS - Sprint Tool Suite
+	* InteliJ
+	* Visual Studio
+	
+Front end development tools and backend application tools
+
+Front End:
+	* HTML
+	* CSS
+	* Java, JavaScript
+	* Angular JS
+	* .Net
+	
+Back End
+	* Java/JavaScript/Angular/.Net
+	* Database management
+	* Cloud
+	* Source Code Management tools (SCM) - Git, Bit Bucket, AWS, Azure
+
+Difference between Web Browser and Web application
+	Web Browser
+		* Chrome
+		* Edge
+		* Firefox
+		* HTML Browser
+		* headleass browser
+	Web application
+		* Facebook
+		* Flipkart
+		* HDFC website
+		* Jira
+		
+What and all we see in a browser
+	* URL bar
+	* Minimize button
+	* Maximize button
+	* New tab
+	* Close 
+	* New window
+	* Forward
+	* Backward
+	* Refresh
+	
+* what are the actions we do on a browser
+
+browser open
+url enter
+new tab open
+tab close 
+min 
+max
+entire browser close
+scroll
+zoom
+navigate - back, forward, refresh
+
+With in application what do we do
+
+application launch - url type
+text enter
+button click
+check box click
+radio box click
+drop down
+links click
+Text read/verify
+Tab title
+Mouse hover
+double click
+Right click
+Date choose
+Drag and drop
+File upload
+Verification/Assert 
+page load speed/time(synchronization)
+Keyboard
+pop up
+	alert
+	tab
+	web alert like info screen
+	Desktop window
+frames
+wait
+WebTable
+
+		
+What and all we see in a web application (Textbox, checkbox, drop down, button, radio button, link, text, image, video,..etc)
+What are the actions we do in an application (click, write, drag and drop, scroll)
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+* In manual testing, we do the testing 
+* In Automation, who would work as a tester - WebDriver
+
+WebDriver - interface
+
+* WebDriver is nothing but us(TESTERs).
+* The main properties of a browser are created as methods inside WebDriver interface
+
+
+get(String url)
+  * In this method only we pass application URL
+getCurrentUrl()
+	* It gives currently focused window's URL. So that we can validate against requirement that, URL is correct 
+close()
+ 	* Closes the currently focused window
+quit()
+	* Closes all the window's opened during the session
+getPageSource()
+	*
+
+@override
+findElement()
+findElements()
+
+getTitle()
+	* Gives the title of the window (tab tile) 
+getWindowHandle()
+	* It gives current window's handle
+	* Its good practice to use getWindowHandle() method, before using getWindowHandles() method
+	* This methods return type is String
+	
+getWindowHandles()
+	* It gives all window's handles opened during that session
+	* This methods return type is Set<String>
+
+
+TargetLocator switchTo()
+	WebDriver frame(int index);
+	WebDriver frame(String nameOrId);
+	WebDriver frame(WebElement frameElement);
+	WebDriver parentFrame();
+
+	TargetLocator TL = WebDriver.switchTo();
+	TL.frame(0);
+	
+	WebDriver.switchTo().frame(0);
+	
+	1) find the frame - means identify the element for the frame
+		- we can identify the frame using 3 things.
+			1. using index
+			2. frameName
+			3. by finding element for the frame
+	2) switchTo().frame()
+	3) do some action on any element inside the frame 
+	4) switchTo().defaultContent();
+	
+	
+	WebDriver window(String nameOrHandle);
+		****WebDriver.switchTo().window();*******
+		
+		String parentWindowHandle = WebDriver.getWindowHandle();
+		Set<String> allWindowHandles = WebDriver.getWindowHandles();
+		for(String eachWindowHandle : allWindowHandles) {
+			if(!eachWindowHandle.equals(parentWindowHandle)) {
+				WebDriver.switchTo().window(eachWindowHandle);
+				}
+			}
+		
+	WebDriver newWindow(WindowType typeHint);
+	WebDriver defaultContent();
+	WebElement activeElement();
+
+
+
+	Alert alert();
+		dismiss();
+		accept();
+		getText();
+		sendKeys();
+		
+switchTo().frame()
+switchTo().window()
+switchTo().alert()
+switchTo().newWindow()
+
+
+TargetLocator TL = WebDriver.switchTo();
+	Alert al = TL.alert();
+	al.accept();
+	
+	WebDriver.switchTo().alert().accept();
+	
+
+switchTo().alert().dismiss();
+switchTo().alert().accept();
+switchTo().alert().getText().toUpperCase();
+
+WebDriver methods 
+
+Navigation navigate();
+	* back()
+	* forward()
+	* to(String url)
+	* to(URL url)
+	* refresh()
+	
+WebDriver.navigate().back();
+WebDriver.navigate().to("www.faceBook.com");
+	
+Options manage()
+	* Timeouts timeouts()
+		* implicitWait()
+	* Window window()
+		* setWindow()
+		* maximize()
+		* minimize()
+		* fullScreen()
+	* getCookies()
+	* deleteCookies()
+	
+	
+	Options opt = WebDriver.manage();
+	TimeOuts TO = opt.timeouts();
+	TO.implicitlyWait(Duration abc);
+	
+	WebDriver.manage().timeouts().implicitlyWait(Duration);
+	
+	
+	Window Wo = opt.window();
+	Wo.maximize();
+	
+	WebDriver.manage().window().maximize();
+	
+	
+	opt.getCookies();
+	
+******************************************************************
+
+Day 29 (28/08/2024)
+	
+	
+What is WebElement 
+	* It is a interface which follows SearchContext (In Java)
+	* Whatever element you see on a web page is called WebElement (For understanding)
+	
+click();
+submit();
+sendKeys();
+clear();
+getTagName();
+getDomAttribute();
+getAttribute();
+isSelected();
+isDisplayed();
+isEnabled();
+getText();
+findElement();
+findElements();
+getLocation();
+getSize();
+getRect();
+getCssValue();
+
+Hirarchy 
+* SearchContext Interface (findElement, findElements)
+* WebDriver Interface ( Basic methods for a browser) 
+* RemoteWebDriver Class( all basic methods are implemented here)
+* Classes ChromeDriver, FirefoxDriver, etc.. 
+
+
+interface SearchContext {
+
+}
+
+interface WebDriver extends SearchContext {
+
+}
+
+class RemoteWebDriver implements WebDriver {
+
+}
+
+class ChromeDriver extends RemoteWebDriver {
+
+}
+
+
+********************************************************************
+
+Day 30 (31/08/2024
+
+Whatever element you see on a web page is called WebElement
+
+What is WebElement
+	* DOM (right click on a page and inspect or F12 or Ctrl+Shift + I)
+	
+	* diff types of tags
+		* html
+		* body
+		* header
+		* input
+		* div
+		* ul
+		* li
+		* a 
+		* svg
+		* select (drop down)
+		* frame or iframe (small html)
+		* table
+			* th 
+			* tr
+			* td
+			
+		* <table>
+			<div>
+				<tr>
+					<th>
+					<th>
+					<th>
+				<tr>
+					<td>
+					<td>
+				<tr>
+					<td>
+					<td>
+
+* attributes
+	whatever key value pair we see inside any tag is called attributes
+	
+	<div> - start tag
+	
+	</div> - end tag
+	
+	<div key1 = "val1" key2 = "val2" > - start tag
+	"text" 
+	</div>
+	
+	where
+	div - tagName
+	key1, key2 - attributes
+	val1, val2 - attribute's value
+	"text" - tag's display name
+
+How to find element in a page 
+
+<html>
+
+ancestor(div)
+  parent(div)
+	parent(ul)
+		child(li)
+			child(select)
+		child(ul)
+			child(li)
+			child(li)
+	parent(ul)
+	parent(li)
+ancestor(div)
+	parent(div)
+		child(div)
+</html>
+
+ancestor
+parent
+child
+siblings
+following ancestor, parent, child, siblings
+preceding ancestor, parent, child, siblings
+text
+contains(text, 'Sathya')
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+We find elements in a page using locators 
+
+Locators in selenium - 
+	locator value should not be duplicate. must be unique
+		means, id = "sathya" should be present only once
+
+id 
+	* most preferred 
+	* do not use if it has numbers in it. 
+	* id = "abc123"; - DO NOT USER
+		* if we reload again, the id value may change to "abc114"
+name
+className
+	* with more spaces 
+tagName
+linkText
+partialLinkText
+CSS selector
+xpath -XML path
+
+
+id, name, className(class) - when these values are unique we can use them directly. When they are not unique, we use either xpath or CSS
+
+findElement(By.id(""));
+findElement(By.name(""));
+findElement(By.class(""));
+findElement(By.linkText("selenium"));
+findElement(By.linkText("Testing Frameworks"));
+findElement(By.linkText("Logging Frameworks"));
+findElement(By.parialLinkText("Frameworks"));
+
+
+	By obj1 = By.className("");
+		WebElement ele = driver.findElement(obj1);
+		ele.click();
+		
+		driver.findElement(By.className("")).click();;
+		
+		driver.findElement(By.id("")).sendKeys();
+
+* when id, name, className attributes are present in an element tag but they not unique, then we go to xpath 
+* When id, name, className attributes are not present inside an element's tag, then also we use xpath
+
+****************************************************************************************************
+
+Xpath - 
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+		
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+		
+
+
