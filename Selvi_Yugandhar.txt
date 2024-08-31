@@ -1516,11 +1516,138 @@ findElement(By.parialLinkText("Frameworks"));
 * when id, name, className attributes are present in an element tag but they not unique, then we go to xpath 
 * When id, name, className attributes are not present inside an element's tag, then also we use xpath
 
-****************************************************************************************************
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-Xpath - 
+XPath
+
+XPATH - xml path
+
+two types of xpath
+
+1) absolute xpath - like using steps 
+	* single slash - /
+	* full path need to written - from html
+	* /html/body/nav/div/div/ul[1]/li[1]/span
+
+	* If there is a change in UI, the above order will change and we can not find our desired element 
+		using the above xpath. 
+	* So using this xpath is  NOT RECOMMENDED.
+	
+2) relative xpath - like using lift
+	* double slash
+	* No need to write full xpath
+	* need to write the xpath for the given element 
+	
+crocs.in
+
+* Basic syntax
+		//tagName[@attribute = 'value']
+		(//span[@class='menuLink-title-J7d'])[1]
+		(//*[@class='menuLink-title-J7d'])[1]
+		
+		https://chromedriver.storage.googleapis.com/index.html?path=114.0.5735.90/
+		//a[@href = '/index.html']
+		driver.findElement(By.xpath("//a[@href = '/index.html']"));
+		
+		//a[@href = "/index.html"]
+		driver.findElement(By.xpath("//a[@href = "/index.html"]"));
+		driver.findElement(By.xpath("//a[@href = /"/index.html/"]"));
+
+* text
+//tagName[text() = 'value']
+
+* contains 
+	//tagName[contains(text(), 'value')]
+	//tagName[contains(@attribute, 'value')]
+
+* and 
+//span[text() = 'Women' and @class='menuLink-title-J7d']
+
+* or 
+//span[@std ='first' or @class='menuLink-title-J7d'] 
+
+//span[text()= 'Classic Crush White Unisex Clog']
+
+//span[contains(text(), 'Classic Crush White Unisex Clog')]
 
 
+//a[@class = 'item-name-suo']/span[contains(text(), 'Classic Crush White Unisex Clog')]
+
+//tagName[contains(@attribute, 'value')]
+
+following
+following-child
+following-parent
+preceding
+preceding-child
+preceding-parent
+ancestor
+
+
+//tagName[@attribute = 'value']//following::tagName
+
+When element is not found - we get elementNotFoundException
+
+Why element is not found, because we wrongly identified the element
+1) spelling mistake
+2) flow mistake
+3) xpath wrong
+
+StaleElementException
+	* Element is available in DOM but not visible in UI
+		
+https://www.guru99.com/xpath-selenium.html#text
+https://www.guru99.com/locators-in-selenium-ide.html
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Practice - "https://www.geeksforgeeks.org/machine-learning-mathematics/?ref=dhm"
+
+//div[text() = 'value']
+
+//div[contain(text(), 'value')]
+
+List<WebElement> allLink  = WebDriver.findElements(By.tagName("//a"));
+
+for(WebElement each: allLink) {
+each.click();
+}
+
+
+List<WebElement> titleHeaders  = WebDriver.findElements(By.xpath("//ul[@class='header-main__list']/li/span"));
+
+for(WebElement each: titleHeaders) {
+each.getText();
+}
+
+public void validateHeaders(String headerName) {
+
+List<WebElement> titleHeaders  = WebDriver.findElements(By.xpath("//ul[@class='header-main__list']/li/span"));
+
+for(WebElement each: titleHeaders) {
+if(each.getText().equalsIgnoreCase(headerName) {
+	syso("Given header "+headerName+" is present);
+}
+else 
+	
+}
+
+}
+
+public void clickGivenHeader(String headerName) {
+
+List<WebElement> titleHeaders  = WebDriver.findElements(By.xpath("//ul[@class='header-main__list']/li/span"));
+
+for(WebElement each: titleHeaders) {
+if(each.getText().equalsIgnoreCase(headerName) {
+	each.click();
+}
+	
+}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
