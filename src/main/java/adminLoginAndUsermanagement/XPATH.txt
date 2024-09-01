@@ -1,0 +1,240 @@
+Amazon Search and 2 Result XPath
+
+for Search bar
+
+
+
+//input[@placeholder='Search Amazon.in']
+			or							
+//input[@id='twotabsearchtextbox']
+
+
+
+for submit the search
+
+
+
+
+
+//input[@id='nav-search-submit-button']
+
+
+
+to point the second search
+
+
+
+//div[@data-index='4']
+		OR
+//div[@data-component-id='14']
+
+
+
+click the link 
+
+//div[@data-index='4']//h2//a
+
+			OR
+
+//div[@data-component-id='14']//h2//a
+
+========================================================================================================================
+
+geeks for geeks 
+
+Machine Learning Mathematics heading
+
+//h1[contains(text(),'Machine Learning Mathematics')]
+
+for Search Icon
+
+//div[@class='gcse-form-search-suggestion_wrapper']
+
+for Search Text box
+
+//div[@class='gcse-form-search-suggestion_wrapper']//input[@placeholder='Search...']
+
+
+tutorial drop down
+
+//li[@class='header-main__list-item Header_2 selected']
+
+Xpath for the Python Tutorial sub list
+
+//li[@class='mega-dropdown__list-item selected']//span[contains(text(),'Python Tutorial')]
+
+Python Tutorial Sub list elements
+
+
+//li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Taking Input in Python')]
+
+//li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Python Operators')]
+
+//li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Python Variables')]
+
+//li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Python Data Types')]
+
+	Sub list elements of Python Data Types
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Data Types')]
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python Numbers')]
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python String')]
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python Lists')]
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python Tuples')]
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Sets in Python')]
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python Dictionary')]
+
+//li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Python Loops and Control Flow')]
+
+	Sub list elements of Python Loops and Control flow
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Conditional Statements')]
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Loops in Python')]
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python If Else')]
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python For Loops')]
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python While Loops')]
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python Breaks')]
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python Continue Statement')]
+		//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python Pass Statement')]
+
+		
+
+//li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Python Functions')]
+
+//li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Python OOPS Concept')]
+
+
+//li[@class='mega-dropdown__list-item selected']//a[contains(text(),'DSA in Python')]
+
+
+//li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Python Exception Handling')]
+
+
+//li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Python File Handling')]
+
+//li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Complete Python Tutorial')]
+
+//li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Python Exercises')]
+
+		Python Excercise Sub list 
+		
+			//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python List Exercise')]
+			//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python String Exercise')]
+			//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python Tuple Exercise')]
+			//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python Dictionary Exercise')]
+			//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python Set Exercise')]
+			//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python Design Patterns')]
+			//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python Programming Examples')]
+			//li[@class='mega-dropdown__list-item']//a[contains(text(),'Python Practice Questions')]
+			
+Comments area: 
+
+//div[@class='three_dot_dropdown_div']//i[@class='discussion_button']
+
+three dots
+
+//ul[@class='dropbtn icons btn-right showLeft']
+
+sub elements of three dots
+	
+	//div[@class='article-buttons drop']//span[contains(text(),'Summarize')]
+							OR
+	//span[contains(text(),'Summarize')]
+	
+	
+		
+	//div[@class='article-buttons drop']//span[contains(text(),'Suggest changes')]
+					OR
+	//span[contains(text(),'Suggest changes')]
+	
+			
+	//div[@class='article-buttons drop']//div[@class='three_dot_dropdown_inner_div']//span[contains(text(),'Like')]
+	
+	
+	//div[@class='three_dot_dropdown_inner_div']//span[contains(text(),'Save')]
+	
+	//div[@class='three_dot_dropdown_inner_div']//span[contains(text(),'Share')]
+	
+	etc
+	
+	
+	
+Read more:
+//div[@class='read-more-container']
+
+//div[@class='read-more-container']//span[contains(text(),'Read More')]
+
+Last page (About page)
+
+Company Heading
+	//ul[@class='footer-wrapper_links-list']//li[contains(text(),'Company')]
+	
+		Company Heading Sub list Elements 
+			//ul[@class='footer-wrapper_links-list']//a[contains(text(),'About Us')]
+											OR
+			//a[contains(text(),'About Us')]
+			
+						
+			//ul[@class='footer-wrapper_links-list']//a[contains(text(),'Legal')]
+											OR
+			//a[contains(text(),'Legal')]
+			
+			//a[contains(text(),'Careers')]
+			
+			//a[contains(text(),'In Media')]
+			
+			//a[contains(text(),'Contact Us')]
+			
+			//a[contains(text(),'Advertise with us')]
+			
+			//a[contains(text(),'GFG Corporate Solution')]
+			
+			//a[contains(text(),'Placement Training Program')]
+			
+			
+Icons at the last 
+
+//div[@class='facebook']
+
+//div[@class='instagram']
+
+//div[@class='linkedin']
+
+//div[@class='twitter']
+
+//div[@class='youtube']
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
