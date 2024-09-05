@@ -102,6 +102,8 @@ public class WindowHandle {
 //			4) close the windows which does not have the given title/element
 //			5) close only the parent window
 //			6) close rest of the window but parent window
+		
+//		Thread.sleep(1000);
 			
 	}
 
