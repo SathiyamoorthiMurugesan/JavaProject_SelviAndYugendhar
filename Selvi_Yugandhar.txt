@@ -1772,7 +1772,30 @@ How to add selenium dependencies
 
 How to download driver.exe file for chrome
 
-Selenium Basic code
+Selenium Basic code - WebDriver methods 
+
+get();
+getTitle();
+manage();
+close();
+quit();
+getCurrentURL();
+getPageSource();
+findElement();
+findElements();
+navigate().to();
+
+
+************************************************************************
+
+Day 33 (05/09/2024)
+
+WebDriver methods
+
+getWindowHandle();
+getWindowHandles();
+
+
 
 
 

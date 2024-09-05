@@ -33,7 +33,7 @@ public class SeleniumBasic {
 		System.setProperty("webdriver.chrome.driver",
 				".\\src\\main\\resources\\drivers\\chromedriver_128.exe");
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver(); 
 		
 		driver.manage().window().maximize();
 		
@@ -55,7 +55,7 @@ public class SeleniumBasic {
 		
 		System.out.println(driver.getTitle());
 		
-		System.out.println(driver.getPageSource());
+//		System.out.println(driver.getPageSource());
 		
 //		driver.quit();
 		
@@ -98,6 +98,12 @@ public class SeleniumBasic {
 //			driver.getCurrentUrl();
 //			driver.getTitle();
 //		}
+		
+		{
+//			WebDriver driver1 = new ChromeDriver(); //A webdriver session is created. Each session has a unique ID. 
+			
+//			Each browser window opened through a session has a unique ID..a - Window handle
+		}
 		
 
 	}
