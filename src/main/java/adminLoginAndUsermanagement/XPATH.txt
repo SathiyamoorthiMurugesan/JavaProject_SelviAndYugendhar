@@ -13,15 +13,10 @@ for Search bar
 for submit the search
 
 
-
-
-
 //input[@id='nav-search-submit-button']
 
 
-
 to point the second search
-
 
 
 //div[@data-index='4']
@@ -110,7 +105,7 @@ Python Tutorial Sub list elements
 
 //li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Python File Handling')]
 
-//li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Complete Python Tutorial')]
+//li[@class='mega-dropdown__list-item selected']//a[contains(text____(),'Complete Python Tutorial')]
 
 //li[@class='mega-dropdown__list-item selected']//a[contains(text(),'Python Exercises')]
 
