@@ -1795,7 +1795,99 @@ WebDriver methods
 getWindowHandle();
 getWindowHandles();
 
+switch to all Windows
+close all windows 
+switch to child window 
+close all child window 
+switch to desired window based on its title
+switch to desired window based on element present in that page
 
+**********************************************************************
+
+Alerts 
+
+Pop ups
+	* Window based pop up (File upload window, enter password and user name)
+	* Web based pop up (looks like web page but its a pop up)
+	* Alert 
+	
+What is Alert:
+	* It stops the web page flow.
+	* You can not inspect Alert
+	* Alert window does not have any url
+	* Only after handling the alert, you can proceed with the page.
+	* Alert does not have any handle ID.
+	
+How to handle Alert
+
+	WebDriver interface
+		* TargetLocator switchTo();
+	
+	TargetLocator interface
+		* Alert alert();
+		
+	Alert interface 
+		dismiss();
+		accept();
+		sendKeys();
+		getText();
+		
+Types of alert
+	* simple alert - informational alert
+	* prompt alert - Need to pass some input as a text
+	* confirmation alert - Yes/No
+	
+		
+	
+When we work on a website, if the alert comes, WebDriver lost its focus on the webpage.
+
+Since we need to handle the alert first,  we need to switch the web driver focus from webpage to alert
+
+1) When there is a alert in the flow but you missed to handle it - UnhandledAlertException
+2) When there is no alert but you wrote a code to handle a alert - NoSuchAlertException
+
+
+************************************************************************
+
+Drop down handling using Selenium
+
+There are two types 
+	* Single selection
+	* Multi selection
+	
+* How Dropdown are configured in a web page
+	* By using select tag and options tag
+		* index
+		* value - attribute
+		* text - attribute
+		
+	Selenium has a seperate class to handle select tag drop down
+		* Select class
+		* first locate the select  tag
+		* Select select = new Select(WebElement); 
+		
+	* Other than select tags
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
 
 
 
