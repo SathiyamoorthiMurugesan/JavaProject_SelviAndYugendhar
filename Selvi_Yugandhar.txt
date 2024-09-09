@@ -1804,6 +1804,8 @@ switch to desired window based on element present in that page
 
 **********************************************************************
 
+Day 34 (08/09/2024)
+
 Alerts 
 
 Pop ups
@@ -1867,6 +1869,67 @@ There are two types
 		* Select select = new Select(WebElement); 
 		
 	* Other than select tags
+	
+**********************************************************************
+
+Day 35 (09/09/2024)
+
+Frame in selenium
+
+Nested html page available inside original webpage - frame/iframe - tag names
+
+<html>
+<body>
+<div>
+	<ul>
+		<li>
+		<li>
+	</ul>
+	<iframe> 
+		<html>
+		<body>
+			<span>
+			</span>
+		</body>
+		</html>
+	</iframe>
+</div>
+</body>
+</html>
+
+1) find the desired element
+2) Check whether the element is present directly inside html or inside of any iframe/frame
+3) if the element is present inside iframe/frame
+	a) first locate the iframe/frame element
+	b) switch into the iframe/frame --> driver.switchTo().frame(int index);
+									-->  driver.switchTo().frame(String frameName);
+									-->  driver.switchTo().frame(WebElement ele);
+	c) to go back to the original html or parent iframe/frame
+		--> driver.switchTo().defaultContent();
+		
+		
+<html>
+	<iframe>
+		<frame>
+				<div>
+				
+div - is our element 
+	1) from here if you user driver.switchTo().parentFrame(); --> driver focus moves to <frame>
+	2) from here if you user driver.switchTo().defaultContent(); --> driver focus moved to either <iframe> or <html>
+	
+Exception we encounter while working with frames or iframes
+	* NoSuchElementException
+	* NoSuchFrameException
+	
+	
+**********************************************************************
+
+Day 3 (/09/2024)
+	
+
+		
+
+							
 	
 	
 
