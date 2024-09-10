@@ -10,7 +10,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class Edgedriver {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub     
 		
 		System.setProperty("Webdriver.Edge",".\\src\\main\\resources\\Folder2\\msedgedriver.exe");
@@ -21,6 +21,8 @@ public class Edgedriver {
 		WebElement search=driver.findElement(By.id("twotabsearchtextbox"));
 		search.sendKeys("Vivo T3");
 		search.sendKeys(Keys.RETURN);
+		Thread.sleep(2500);
+		driver.quit();
 
 	}
 
