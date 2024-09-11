@@ -77,7 +77,7 @@ public class DropDownPractice {
 
 	}
 	
-	public void launchApplication(String applicationURL, long implicitWaitTime) {
+	public WebDriver launchApplication(String applicationURL, long implicitWaitTime) {
 
 		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver_128.exe");
 
@@ -88,6 +88,8 @@ public class DropDownPractice {
 
 		driver.get(applicationURL);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWaitTime));
+		
+		return driver;
 
 	}
 	

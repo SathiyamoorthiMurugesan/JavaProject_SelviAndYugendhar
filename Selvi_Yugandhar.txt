@@ -1926,6 +1926,15 @@ Exception we encounter while working with frames or iframes
 
 Day 3 (/09/2024)
 	
+	
+Actions class
+Robot class
+Scrolling
+wait
+Screenshots
+Shadow element
+
+
 
 		
 

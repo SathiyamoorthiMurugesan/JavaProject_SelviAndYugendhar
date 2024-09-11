@@ -10,9 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GenericMethods {
 	
-	WebDriver driver;
+	static WebDriver driver;
 	
-	public void launchApplication(String applicationURL, long implicitWaitTime) {
+	public void launchApplication1(String applicationURL, long implicitWaitTime) {
 
 		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver_128.exe");
 
@@ -26,7 +26,27 @@ public class GenericMethods {
 
 	}
 	
+	public static WebDriver launchApplicationInChrome(String applicationURL, long implicitWaitTime) {
+
+		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver_128.exe");
+
+		driver = new ChromeDriver();
+		System.out.println(driver.getWindowHandle());
+
+		driver.manage().window().maximize();
+
+		driver.get(applicationURL);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWaitTime));
+		
+		return driver;
+
+	}
 	
+//	WebDriver methods
+	
+	public WebElement findAnElementUsingXpath(String xpath) {
+		return driver.findElement(By.xpath(xpath));
+	}
 	
 	
 //	SwitchTo methods 
