@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class PropertyFileReading {
 
-	static String filePath = ".\\src\\test\\resources\\file2.properties";
+	static String filePath = ".\\src\\main\\resources\\Files\\file2.properties";
 
 	public static void main(String[] args) throws Exception {
 		

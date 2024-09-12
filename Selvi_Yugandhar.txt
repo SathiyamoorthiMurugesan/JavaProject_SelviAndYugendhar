@@ -1924,15 +1924,31 @@ Exception we encounter while working with frames or iframes
 	
 **********************************************************************
 
-Day 3 (/09/2024)
+Day 36 (11/09/2024)
+
+Actions class in detail
+
+**********************************************************************
+
+Day 37 (12/09/2024)
 	
-	
-Actions class
-Robot class
+Robot class in detail
+
+How to access and automate Shadow Elements
+
+getDriver() methods
+
+
+
+
+
+
+
 Scrolling
 wait
 Screenshots
-Shadow element
+WebTable
+Frameworks
 
 
 

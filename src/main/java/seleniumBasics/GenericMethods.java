@@ -12,17 +12,26 @@ public class GenericMethods {
 	
 	static WebDriver driver;
 	
+	private WebDriver driver1;
+	
+	public WebDriver getDriver1() {
+		return driver1;
+	}
+
+	public void setDriver1(WebDriver driver1) {
+		this.driver1 = driver1;
+	}
+
 	public void launchApplication1(String applicationURL, long implicitWaitTime) {
 
 		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver_128.exe");
 
-		driver = new ChromeDriver();
-		System.out.println(driver.getWindowHandle());
+		driver1 = new ChromeDriver();
 
-		driver.manage().window().maximize();
+		getDriver1().manage().window().maximize();
 
-		driver.get(applicationURL);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWaitTime));
+		getDriver1().get(applicationURL);
+		getDriver1().manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWaitTime));
 
 	}
 	
