@@ -31,7 +31,7 @@ public class Assignment1 {
 			driver.switchTo().window(each);
 			sessionId.add(each);
 			titleName.add(driver.getTitle());
-			System.out.println("Session_Id: " + each +"    " +"Windows Title = " +driver.getTitle());	
+//			System.out.println("Session_Id: " + each +"    " +"Windows Title = " +driver.getTitle());	
 		}
 		
 		
@@ -46,7 +46,7 @@ public class Assignment1 {
 				driver.close();
 			}
 		}
- * 
+ *    
  */
 		
 
