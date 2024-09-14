@@ -1939,16 +1939,52 @@ How to access and automate Shadow Elements
 getDriver() methods
 
 
+**********************************************************************
+
+Day 38 (14/09/2024)
+
+Scrolling in Selenium 
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Wait - Example 
+
+TC01 - Verify that YAN shows only for Employee and not for managers
+
+public void validateYAN(String employeeOrManagerUserID, String password) {
+
+LaunchApplication(); //URL, your login details also was given in Property file
+LoginUser(employeeOrManagerUserID, password); //in this method you find whether this user is manager or emp
+ValidateYAN(employeeOrManagerUserID);
+
+
+}
+
+public void validateYAN(String employeeOrManagerUserID) {
+
+switch(employeeOrManagerUserID) {
+case "employee":
+wait. for YAN to show()
+break
+
+case "Manager":
+}
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Screenshots in detail
 
 
 
 
+*************************************************************************
 
 Scrolling
 wait
 Screenshots
 WebTable
 Frameworks
+validation in Selenium using TestNG
 
 
 
