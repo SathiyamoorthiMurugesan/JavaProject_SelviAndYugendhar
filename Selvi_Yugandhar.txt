@@ -1957,7 +1957,6 @@ LaunchApplication(); //URL, your login details also was given in Property file
 LoginUser(employeeOrManagerUserID, password); //in this method you find whether this user is manager or emp
 ValidateYAN(employeeOrManagerUserID);
 
-
 }
 
 public void validateYAN(String employeeOrManagerUserID) {
@@ -1974,15 +1973,15 @@ case "Manager":
 
 Screenshots in detail
 
+**********************************************************************
 
+Day 39 (16/09/2024)
+
+WebTable in detail
 
 
 *************************************************************************
 
-Scrolling
-wait
-Screenshots
-WebTable
 Frameworks
 validation in Selenium using TestNG
 
