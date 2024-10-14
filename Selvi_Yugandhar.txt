@@ -5,6 +5,8 @@ Day 1 (18/07/2024)
 		* Editor tool
 		* it gives us a simple but advanced UI to view, edit and run our files in a very easy way.
 		
+Eclipse alternate tool - inteliJ, STS (Sprint tool suite), Visual Studio Code
+		
 *************************************************************************
 Day 1 (19/07/2024)
 
@@ -26,8 +28,8 @@ Variables
 	- people/chair/table - type- datatype
 	- red table, red chairs or white chairs - naming - variable name
 
-chair red = 30;
-	Chair - datatype
+	chair redColor = 30;  --camel case format - myNameIsSathya - mynameissathya
+	chair - datatype
 	red - variable name 
 	30 - variable value 
 public chair red = 20;
@@ -66,7 +68,7 @@ public chair red = 20;
 private chair red = 2;      
 
 	- public void incomeTaxCertificateProcess() {
-		
+		 
 		}
 	- public void MarriageCertificateProcess() {
 		
@@ -81,6 +83,14 @@ private chair red = 2;
 	- protected void importantDocumentsRoom() {
 
 		}
+		
+	- default void washRoom() {
+	
+		}
+		
+	- void washRoom1() {
+	
+		}
 
 public chair red = 20;
 private chair red = 2; 
@@ -89,7 +99,7 @@ private chair red = 2;
 
 * incomeTaxCertificateProcess - camelCase
 	- class names should start with CAPITAL LETTER and followed by camelCase
-	- method names should start with SMALL LETTER and followed by camelCase
+	- method/variable names should start with SMALL LETTER and followed by camelCase
 	- all the java keywords starts with SMALL LETTER such as class, public, void etc.
 
 
@@ -101,17 +111,19 @@ Chennai Taluk office - Class - parent class
 	- Tambaram Taluk office - Class
 	- Guindy Taluk office - Class 
 
-Chennai Taluk Office - Parent class
+Chennai Taluk Office - Parent/Super class
 Velachery Taluk Office - Parent class
-Velachery East Taluk Office - Child class 
+Velachery East Taluk Office - Child/Sub class 
 
-VelacheryTalukOffice extends ChennaiTalukOffice { }
-VelacheryEastTalukOffice extends VelacheryTalukOffice { }
+public class ChennaiTalukOffice() {}
+public class VelacheryTalukOffice extends ChennaiTalukOffice { }
+public class VelacheryEastTalukOffice extends VelacheryTalukOffice { }
 
 We need someone or some office to create rules so that by using that every taluk office will work
-For that, in Java, we use interface 
+For that, in Java, we use Interface 
 
 We create rules in interface
+
 COMMON SYNTAX FOR INTERFACE 
 	- AccessModifier interface(Java keyword) InterfaceName { }
 	- public interface PeopleAdministrationRules {
@@ -127,6 +139,7 @@ public interface PeopleAdministrationRules {
 	public void incomeCertificateProcess();
 
 	public void marriageCertificateProcess();
+	
 	}
 
 public interface ChennaiEastPeopleAdminRules { 
@@ -140,16 +153,26 @@ public class ChennaiTalukOffice implements PeopleAdministrationRules {
 
 }
 
+public interface PeopleAdministrationRules implements ChennaiTalukOffice {
+
+}
+
+same entity - extends 
+different entity - implements
+
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
 ChennaiGovtHospital conducts medical camp inside the campus - This event equal to Object Creation or Object Initiation or Object Instantiation in Java
 
-ChennaiGovtHospital MedicalCamp = new ChennaiGovtHospital
-ChennaiGovtHospital BloodDonationCamp = new ChennaiGovtHospital
-ChennaiGovtHospital EyeTestCamp = new ChennaiGovtHospital
+ClassName objectName/ObjectName = new  ClassName();
+ChennaiGovtHospital MedicalCamp = new ChennaiGovtHospital();
+ChennaiGovtHospital BloodDonationCamp = new ChennaiGovtHospital();
+ChennaiGovtHospital EyeTestCamp = new ChennaiGovtHospital();
 
 public class ChennaiGovtHospital {
 	ChennaiGovtHospital MedicalCamp = new ChennaiGovtHospital();
+	ChennaiGovtHospital EyeCamp = new ChennaiGovtHospital();
+	ChennaiGovtHospital DentalCamp = new ChennaiGovtHospital();
 }
 
 public class ChennaiPoliceStation { 
@@ -162,16 +185,45 @@ Medical camp conducted by ChennaiGovtHospital is managed by a Clerk
 
 This Clerk is equal to "CONSTRUCTOR" in java
 	ChennaiGovtHospital MedicalCamp = new ChennaiGovtHospital();
-		- ChennaiGovtHospital - Constuctor
+		- ChennaiGovtHospital() - Constuctor
 
 CONSTRUCTOR COMMON SYNTAX 
 	- AccessModifier ClassName() { }
 	- public ChennaiGovtHospital() { 
 		}
+		
+METHOD SYNTAX
+	- AccessModifier returnType methodName() {  }
+	
 
 1) Constructor do not have return type;
 2) Constructor name should be as same as Class Name;
 3) By default, each class has its own Constructor and we call it as DEFAULT CONSTRUCTOR;
+
+
+STATIC  - keyword
+		- belongs the class
+		
+	
+	Reception chair, reception telephone, reception table, receptionist
+	
+Taluk Office receptionist
+
+Within Class(Taluk Office) - receptionist - directly we can call them
+
+Outside
+Outside of Taluk Office and within PoliceStation - 
+	- We call the TO receptionsit as TO receptionist
+	- POlice Station receptionist
+	
+public chair red = 10 
+static public chair red = 10;
+public static chair red = 10;
+
+public static void method1() {   }
+static public void method2() {   }
+
+
 
 
 Methods
@@ -184,6 +236,30 @@ Project
 Interface
 Object Creation
 Constructor
+
+
+ChennaiAdminstration - Project 
+PeopleAdminstration - package
+	ChennaiTO - class
+	PeopleAdministrationRules - interface
+	VelacheryTO - class
+	VelacheryEastTO - class
+	TambaramPeopleAdminRules - interface
+	TambaramTO - class
+	dummyDocument.txt
+	Data.xls
+
+HealthAdminstraction - package
+	ChennaiGH - class
+	HealthAdminRules - interface
+	ChennaiNorth - class
+	Chennai South - class
+	HealthAdminRulesNorthAndSouth - interface
+	
+ChennaiBluePrint.txt
+MyDocuments - folder
+	
+	
 
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
@@ -253,10 +329,15 @@ Day 4 (21/07/2024)
 
 Git basics
 
+Git alternative tool - bitBucket, Azure, AWS
+
 * helps to work on a same file by multiple person. 
 * SCM - Source code management 
 
 Original project is in our system, we use Eclipse to view and edit the project in easy manner
+
+File Explorer view of our project - Local
+Git view of our project - Remote 
 
 Git Repository - Repo- Remote - Remote project
 
@@ -279,6 +360,8 @@ Git Repository - Repo- Remote - Remote project
 Day 5 (22/07/2024)
 
 Maven - Dependencies management tool
+
+other such tools - Gradle, ant
 
 	* Difficulties in adding a .jar file into our project
 	* .M2 folder stores the dependencies added in pom.xml file
@@ -310,6 +393,16 @@ resolution:-
 	* Download the project from 
 		* https://github.com/SathiyamoorthiMurugesan/ABC
 		* Import this project into eclipse
+		
+
+1. Create a local project (add all the required files)
+2. In github, create a repo
+3. Open git bash from your project location
+4. git init 
+5. git add .
+6. git commit  -m "message"
+7. git remote add origin "git repo link"
+8. git push -u origin master
 		
 ************************************************************************************
 
