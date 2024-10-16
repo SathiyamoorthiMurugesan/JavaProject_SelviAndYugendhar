@@ -403,6 +403,8 @@ resolution:-
 6. git commit  -m "message"
 7. git remote add origin "git repo link"
 8. git push -u origin master
+
+
 		
 ************************************************************************************
 
@@ -434,6 +436,30 @@ Different ways to import a maven project into Eclipse
 	* We keep utility files which is being used in test cases
 
 * Create a Maven project, push it into Git and add collaborators
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+How to bring already existing project into your workspace/system
+
+1. Copy the SSH of the git repo.
+2. Eclipse - File - import - Project from Git
+3. Clone URI
+4. git@github.com:nirmalnehru2000/Second-sample.git
+5. Choose branches to be cloned - choose all the branches
+6. Path will be created in your local system. (git folder)
+7. Choose the initial branch - master 
+8. Select wizard - import existing eclipse project
+9. Finish
+
+Check git perspective 
+window - perspective - others - git 
+
+1. How to clone a project - using eclipse 
+2. How to pull a change from a project branch into your local branch
+3. How to import a existing maven project into your eclipse view 
+4. How to clone a project - using git bash 
+
 
 ************************************************************************************
 
